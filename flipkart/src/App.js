@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import { MobilesTablets } from './pages/Products/MobilesTablets/MobilesTablets';
+import AllRoutes from './Router/Router';
+
+
 
 function App() {
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <AllRoutes/>
     </div>
   );
 }
