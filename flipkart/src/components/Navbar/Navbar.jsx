@@ -34,8 +34,11 @@ import {
 import React, { useState } from "react";
 import vipmart_logo from "./vipmart.png";
 import Login from "../Login/Login";
+import Reg from "../Registration/Reg";
 
 const Navbar = () => {
+  const [page,setPage]=useState(false)
+
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [text, setText] = useState("");
 
@@ -292,7 +295,7 @@ const Navbar = () => {
 
       {/* login modal */}
       <Modal size='2xl' isOpen={isOpen} onClose={onClose}>
-        <Login onClose={onClose}/>
+        {page?<Reg page={page} setPage={setPage}/>:<Login page={page} setPage={setPage}/>}
       </Modal>
     </Box>
   );
