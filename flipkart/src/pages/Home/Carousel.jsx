@@ -10,28 +10,31 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const CarouselDemo = ({ data, heading }) => {
-  console.log(data);
   return (
     <Box
-      w="100%"
       backgroundColor={"white"}
       display={{ base: "block", sm: "block", "2xl": "flex" }}
       justifyContent="space-between"
       textAlign={"left"}
       p="10px"
-      mb="40px"
     >
       <Box
         w="300px"
         textAlign={"center"}
         display="flex"
-        flexDirection={{base:"row","2xl":"column"}}
-        justifyContent={{"2xl":"center"}}
+        flexDirection={{ base: "row", "2xl": "column" }}
+        justifyContent={{ "2xl": "center" }}
         alignItems={"center"}
         gap="10px"
       >
-        <Heading fontWeight={"400"} fontSize={{base:"lg","2xl":"2xl"}}>{heading}</Heading>
-        <Button backgroundColor={"#2874F0"} colorScheme="#2874F0" size={{base:"sm","2xl":"lg"}}>
+        <Heading fontWeight={"400"} fontSize={{ base: "lg", "2xl": "2xl" }}>
+          {heading}
+        </Heading>
+        <Button
+          backgroundColor={"#2874F0"}
+          colorScheme="#2874F0"
+          size={{ base: "sm", "2xl": "lg" }}
+        >
           View All
         </Button>
       </Box>
@@ -61,29 +64,41 @@ const CarouselDemo = ({ data, heading }) => {
           },
         }}
       >
-        <Grid templateColumns={"repeat(5,1fr)"} w="90%" m="auto">
+        <Grid templateColumns={"repeat(5,1fr)"} m="auto">
           {data.map((el, i) => {
-            console.log(el.img);
             return (
-              <Box key={Date.now()}>
+              <Box key={i}>
                 <SwiperSlide>
                   <Link to={el.link}>
                     <Box textAlign="center" cursor="pointer">
                       <Box
                         display={"flex"}
-                        h={{base:"80px",xl:"200px","2xl":"200px"}}
+                        h={{ base: "80px", xl: "200px", "2xl": "200px" }}
                         justifyContent="center"
                         alignItems={"center"}
                       >
-                        <Image src={el.img} w={{base:"50px","2xl":"auto"}} />
+                        <Image
+                          src={el.img}
+                          w={{ base: "50px", "2xl": "auto" }}
+                        />
                       </Box>
-                      <Text fontWeight={"600"} fontSize={{base:"10px",xl:"14px","2xl":"14px"}}>
+                      <Text
+                        fontWeight={"600"}
+                        fontSize={{ base: "10px", xl: "14px", "2xl": "14px" }}
+                      >
                         {el.title}
                       </Text>
-                      <Text fontWeight={"350"} fontSize={{base:"11px",xl:"17px","2xl":"17px"}} color="green">
+                      <Text
+                        fontWeight={"350"}
+                        fontSize={{ base: "11px", xl: "17px", "2xl": "17px" }}
+                        color="green"
+                      >
                         {el.price}
                       </Text>
-                      <Text fontWeight={"250"} fontSize={{base:"9.5px",xl:"13px","2xl":"13px"}}>
+                      <Text
+                        fontWeight={"250"}
+                        fontSize={{ base: "9.5px", xl: "13px", "2xl": "13px" }}
+                      >
                         {el.footer}
                       </Text>
                     </Box>

@@ -98,6 +98,13 @@
     ],
     "fashion_deals":[
         {
+            "img":"https://rukminim1.flixcart.com/image/200/200/xif0q/shoe/g/g/y/-original-imagg7epfcgfsva7.jpeg?q=70",
+            "title":"WROGN, Red Tape & more",
+            "price":"Min 40% Off",
+            "footer":"Sneakers, High Tops & more",
+            "link":"shoes"
+        },
+        {
             "img":"https://rukminim1.flixcart.com/image/200/200/kqy3rm80/kids-dress/u/d/e/5-6-years-s-49-amy-original-imag4untgegbyggz.jpeg?q=70",
             "title":"Girls Dress",
             "price":"Under ₹249",
@@ -145,13 +152,6 @@
             "price":"Min60%Off+Extra10% Off",
             "footer":"Van Huesen, People, Allen Solly",
             "link":"fashion"
-        },
-        {
-            "img":"https://rukminim1.flixcart.com/image/200/200/xif0q/shoe/g/g/y/-original-imagg7epfcgfsva7.jpeg?q=70",
-            "title":"WROGN, Red Tape & more",
-            "price":"Min 40% Off",
-            "footer":"Sneakers, High Tops & more",
-            "link":"shoes"
         }
     ],
     "mobile_offers":[
@@ -159,7 +159,7 @@
         "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/9946a23b3d800ae2.jpg?q=50",
         "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/27a523d8cf02ccf2.jpg?q=50"
     ],  
-    "featured_brands":[
+    "featured_brands1":[
         "https://rukminim1.flixcart.com/fk-p-flap/1312/704/image/738e53040adaa236.jpeg?q=70",
         "https://rukminim1.flixcart.com/fk-p-flap/1312/704/image/c55b34f61e0659df.jpeg?q=70",
         "https://rukminim1.flixcart.com/fk-p-flap/1312/704/image/521d947779081085.jpeg?q=70",
@@ -192,7 +192,7 @@
             "link":"oppo_pads"
         },
         {
-            "img":"https://rukminim1.flixcart.com/image/200/200/xif0q/smSartwatch/q/m/t/-original-imaggxudw4natfxf.jpeg?q=70",
+            "img":"https://rukminim1.flixcart.com/image/200/200/xif0q/smartwatch/q/m/t/-original-imaggxudw4natfxf.jpeg?q=70",
             "title":"Fire-Boltt Ninja Calling Pro",
             "price":"Just ₹1,499",
             "footer":"1.69'' BT Calling",
@@ -234,7 +234,7 @@
             "link":"fashion"
         }
     ],
-    "price_board":[
+    "price_board1":[
         "https://rukminim1.flixcart.com/fk-p-flap/400/400/image/d10fc1ea3a67ee73.jpg?q=50",
         "https://rukminim1.flixcart.com/fk-p-flap/400/400/image/0443b07e5a2ae807.jpg?q=50",
         "https://rukminim1.flixcart.com/fk-p-flap/400/400/image/b7f31f93a63f03ce.jpg?q=50",
@@ -310,5 +310,215 @@
         "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/46532c2d5fa9ab37.jpeg?q=50",
         "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/78f17b2066cf4982.jpeg?q=50",
         "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/51f51e746d3eb123.jpeg?q=50"
+    ],
+    "featured_brands2":[
+        "https://rukminim1.flixcart.com/fk-p-flap/1312/704/image/e257266a99220a57.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/1312/704/image/434ec12f2d61e783.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/1312/704/image/42d7ca5c2630b08d.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/1312/704/image/12b5529d6706ee80.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/1312/704/image/005085b068e741c5.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/1312/704/image/d109c7b71faba1d2.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/1312/704/image/3f1e9b5d3d7e1a5b.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/1312/704/image/87a0976a065bae1d.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/1312/704/image/1aa3e5534e5f6783.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/1312/704/image/9c06083e109738bc.jpeg?q=70"
+    ],
+    "card_discount":[
+        "https://rukminim1.flixcart.com/fk-p-flap/400/400/image/0c5fdf0520b0e35a.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/400/400/image/2be793b0d98007b2.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/400/400/image/094161f93ed08640.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/400/400/image/74eee58e0a17b56d.jpg?q=50"
+    ],
+    "fashion_collection_from_199":[
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/kvtuxe80/shoe/s/z/b/8-2fd21259-8-u-s-polo-assn-orange-original-imag8n6zahdpmxvf.jpeg?q=70",
+            "title":"Bride, Burton & more",
+            "price":"Under ₹299",
+            "footer":"Men's Shoes",
+            "link":"shoes"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/kjem3rk0-0/jewellery-set/1/d/e/skr69591-sukkhi-original-imafyzefh9ngptsj.jpeg?q=70",
+            "title":"Necklace, Earrings & more",
+            "price":"From ₹99",
+            "footer":"Shop from best selection",
+            "link":"jwellery"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/xif0q/hand-messenger-bag/1/i/k/-original-imagggj9t3szqmzq.jpeg?q=70",
+            "title":"Bestselling Handbags",
+            "price":"From ₹199",
+            "footer":"Fastrack, Caprese, Baggit...",
+            "link":"bags"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/xif0q/kids-dress/y/y/c/1-2-years-girls-bilow-knee-white-dress-jhilikgarments-original-imagjmkkwnyjfyca.jpeg?q=70",
+            "title":"Girls' Dresses",
+            "price":"From ₹199",
+            "footer":"Tiny Toys, Celebrity Club..",
+            "link":"kids_fashion"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/ksnjp8w0/track-pant/o/b/g/m-petpntmr3218524-peter-england-original-imag66bdvh9p2bsk.jpeg?q=70",
+            "title":"Levi's, Van Heusen, U.S. Polo..",
+            "price":"From ₹149",
+            "footer":"Essentials, Joggers, Shorts",
+            "link":"fashion"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/kkwwu4w0/jewellery-set/4/k/4/re04nw202140-rubans-original-imagy5ephgcuwzka.jpeg?q=70",
+            "title":"JewellerySets, Earrings, Rings..",
+            "price":"From ₹99*",
+            "footer":"Great Offer Just For You!",
+            "link":"jwellery"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/kjabs7k0-0/dupatta/s/1/6/2-25-meters-d57-velvet-gota-traditions-bazaar-original-imafyw8phyfwjrfz.jpeg?q=70",
+            "title":"Embroidered Dupattas",
+            "price":"From ₹199",
+            "footer":"Shop Now!!",
+            "link":"fashion"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/flap/200/200/image/7836b0f92b8a96dd.jpg?q=70",
+            "title":"Boy's & Girl's Clothing",
+            "price":"From ₹149",
+            "footer":"FTC Fashions, Tripr & more",
+            "link":"kids_fashion"
+        }        
+    ],
+    "fifth_advt":[
+        "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/6e51f00af455daca.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/46adfc9407e14862.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/b1192a8fb27c107c.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/5e61cc6278e6a1de.jpeg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/ef6914388cce2f7f.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/2e6c9e5c12be1c57.jpg?q=50"
+    ],
+    "tv_appliances":[
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/xif0q/television/q/8/z/-original-imagk7sj2wsrecyj.jpeg?q=70",
+            "title":"Google TVs",
+            "price":"From ₹17,499*",
+            "footer":"Sony, Vu, Hisense, Thomson..",
+            "link":"tvs"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/xif0q/washing-machine-new/f/x/k/-original-imaghuw5khhyej9d.jpeg?q=70",
+            "title":"Top Deals on Washing Machines",
+            "price":"Grab Now!",
+            "footer":"From ₹6,790",
+            "link":"washing_machines"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/ksru0sw0/water-geyser/p/6/w/aswh-3015-crompton-original-imag69j6vnzpgfy6.jpeg?q=70",
+            "title":"Water Geysers",
+            "price":"Upto 65% Off",
+            "footer":"By Crompton",
+            "link":"geysers"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/kpydrbk0/voltage-stabilizer/9/t/j/els-600-led-mini-ultra-els-600-mini-ultra-everest-original-imag42ntyqnpwpar.jpeg?q=70",
+            "title":"Microwave Oven",
+            "price":"Upto 45% Off",
+            "footer":"Samsung IFB & more",
+            "link":"microwave"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/xif0q/refrigerator-new/t/n/k/-original-imagkgpqtrwnuph2.jpeg?q=70",
+            "title":"Deals on Refegirators",
+            "price":"From ₹3,999",
+            "footer":"Grab Now!",
+            "link":"refegirators"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/l1pc3gw0/air-conditioner-new/3/b/p/-original-imagd7zwtgyjumt8.jpeg?q=70",
+            "title":"Energy Efficient ACs",
+            "price":"From ₹25,499",
+            "footer":"LG, IFB & more",
+            "link":"acs"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/ka2tmkw0/vacuum-cleaner/c/q/b/ilife-v80-robotic-vacuum-cleaner-original-imafrqfefjfx7zdj.jpeg?q=70",
+            "title":"Robotic Vaccums",
+            "price":"Upto 55% Off",
+            "footer":"Eufy, Mi & more",
+            "link":"vaccums"
+        }
+    ],
+    "electronics_deal":[
+        {
+            "img":"https://rukminim1.flixcart.com/flap/200/200/image/5daee8f038724602.jpg?q=70",
+            "title":"Computer Accessories",
+            "price":"NCEMI Up to 6 months!",
+            "footer":"Mouse, Keyboard & more",
+            "link":"electronics"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/xif0q/power-bank/m/g/c/-original-imagg5zzxpdfrdrs.jpeg?q=70",
+            "title":"Fast Charging Powerbanks",
+            "price":"From ₹426",
+            "footer":"Mi, Ambrane & more",
+            "link":"electronics"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/kk01pjk0/dslr-camera/f/v/o/eos-1500d-canon-original-imafzfugydh2mjgf.jpeg?q=70",
+            "title":"Premium Cameras",
+            "price":"From ₹28,999",
+            "footer":"Canon, SONY & more",
+            "link":"electronics"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/fk-p-flap/200/200/image/d508237c2df9fd4a.png?q=70",
+            "title":"Screen Guards",
+            "price":"From ₹99",
+            "footer":"For All Top Models",
+            "link":"electronics"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/kjom6q80-0/speaker/mobile-tablet-speaker/r/a/g/blitz-2000-boat-original-imafz78cs8ftzgbq.jpeg?q=70",
+            "title":"Best Selling Home Theaters",
+            "price":"Grab or Gone",
+            "footer":"Sony, boAt & more",
+            "link":"electronics"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/kfbfr0w0/gamingconsole/h/g/g/rrt-00022-1024-xbox-yes-original-imafvsyhtamawykz.jpeg?q=70",
+            "title":"Microsoft Xbox series",
+            "price":"Shop Now",
+            "footer":"Powerful Gaming Console",
+            "link":"electronics"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/k33c4nk0/smart-assistant/a/j/k/nest-mini-ga00781-in-google-original-imafmauqguud8wsz.jpeg?q=70",
+            "title":"Top Smart Speakers",
+            "price":"Buy Now",
+            "footer":"Google, Apple & more",
+            "link":"electronics"
+        },
+        {
+            "img":"https://rukminim1.flixcart.com/image/200/200/l27wtjk0/smartwatch/a/e/o/-original-imagdhrxwemfrbmd.jpeg?q=70",
+            "title":"Fire-Boltt Smartwatches",
+            "price":"From ₹1,299",
+            "footer":"BT Calling | Fitness Tracking",
+            "link":"electronics"
+        }
+    ],
+    "price_board2":[
+        "https://rukminim1.flixcart.com/fk-p-flap/400/400/image/2e767a413d1831a4.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/400/400/image/bd67676784ee8767.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/400/400/image/c502effca6a0288e.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/400/400/image/22213c88ca1cc24e.jpg?q=50"
+    ],
+    "sixth_advt":[
+        "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/451abf75db177d4d.jpeg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/bf92267693675d98.jpeg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/13e8f188dde62eb9.jpeg?q=50"
+    ],
+    "seventh_advt":[
+        "https://rukminim1.flixcart.com/fk-p-flap/400/400/image/e0a84935e1e5732b.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/400/400/image/9c37423ebee42027.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/400/400/image/403ad3bb82fe58b0.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/400/400/image/a16dcd4211ea1789.jpg?q=50"
     ]
 }
