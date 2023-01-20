@@ -17,13 +17,37 @@ import {
 import "./Login.css";
 import { Link as RouteLink } from "react-router-dom";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
+import { signInWithEmailAndPassword } from "@firebase/auth";
+import { auth } from "../../firebase";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthContext";
 
-const Login = ({page,setPage}) => {
+const Login = ({page,setPage,onClose}) => {
   const [showPassword, setShowPassword] = useState(false);
   const [email,setEmail]=useState('');
   const [pwd,setPwd]=useState('');
 
+  const {dispatch}=useContext(AuthContext)
+
+
   const handleLogin=()=>{
+
+    dispatch({type:"LOGIN_START"})
+
+    try{
+      signInWithEmailAndPassword(auth, email, pwd)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        // ...
+        dispatch({type:"LOGIN_SUCCESS",payload:user})
+
+        onClose()
+        // console.log(user)
+      });
+    }catch(error){
+      dispatch({type:"LOGIN_FAILURE"})
+    }
     
   }
 

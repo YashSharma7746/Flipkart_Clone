@@ -16,7 +16,6 @@ import {
   Checkbox,
 } from "@chakra-ui/react";
 import './Reg.css';
-import  {useAuth}  from "../../context/AuthContext";
 
 import { Link as RouteLink } from "react-router-dom";
 
@@ -27,6 +26,8 @@ import { useState, useEffect } from "react";
 import {BsFillExclamationTriangleFill} from 'react-icons/bs';
 import {ImCross} from 'react-icons/im';
 import {FaCheck} from 'react-icons/fa';
+import { auth } from "../../firebase";
+import { createUserWithEmailAndPassword, updateProfile } from "@firebase/auth";
 
 const EMAIL_REGEX = /^[\w]+@([\w-]+\.)+[\w-]{3}$/g;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
@@ -52,11 +53,8 @@ const Reg = ({page,setPage}) => {
   const [validMatch, setValidMatch] = useState(false);
   const [matchFocus, setMatchFocus] = useState(false);
 
-  const {signup,currentUser}=useAuth;
 
-  // loading and error state:-
-  const [error,setError]=useState('');
-  const [loading,setLoading]=useState(false)
+  
   
 
 
@@ -74,19 +72,24 @@ const Reg = ({page,setPage}) => {
   }, [pwd, matchPwd]);
 
 
-  const handleSubmit=async(e)=>{
-    e.preventDefault();
+  const handleSubmit=async()=>{
+
     try{
-      setEmail('');
-      setLoading(true);
-      await signup(email,pwd).then((res)=>console.log(res))
-    }catch(e){
-      console.log(e)
-      setError(e.message)
-    } 
-    setLoading(false)
+      await createUserWithEmailAndPassword(auth, email, pwd)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        updateProfile(user, {
+          displayName: email
+        });
+        setPage(false)
+      })
+     
+    }catch(error){
+
+    }
+    
   }
-console.log(signup)
   return (
     <>
       <ModalOverlay />
@@ -107,7 +110,6 @@ console.log(signup)
           {/* right side */}
           <Box className="right_col">
             <Box  p={"20px 40px"}>
-              <Heading>{currentUser&&currentUser.email}</Heading>
           <FormControl id="email">
             <FormLabel display={'flex'} alignItems='center'>
               Email
@@ -236,7 +238,7 @@ console.log(signup)
             <Box>
               <Button
                 isDisabled={
-                !validEmail || !validPwd || !validMatch || !isChecked ||loading? true : false
+                !validEmail || !validPwd || !validMatch || !isChecked ? true : false
                 }
                 onClick={handleSubmit}
                 w={"100%"}

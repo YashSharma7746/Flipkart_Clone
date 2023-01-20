@@ -8,10 +8,10 @@ import { ImFolderUpload } from "react-icons/im";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { GoBell } from "react-icons/go";
 import { IoMdDownload } from "react-icons/io";
-import { RiQuestionnaireFill } from "react-icons/ri";
+import { RiQuestionnaireFill, RiLogoutBoxRLine } from "react-icons/ri";
 import data from "./searchData.json";
 import "./Navbar.css";
-
+// colorScheme
 import {
   Box,
   Image,
@@ -27,19 +27,40 @@ import {
   PopoverContent,
   PopoverTrigger,
   Text,
-  useDisclosure,
   Modal,
   Divider,
+  Drawer,
+  Wrap,
+  WrapItem,
+  Avatar,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import vipmart_logo from "./vipmart.png";
 import Login from "../Login/Login";
 import Reg from "../Registration/Reg";
+import Profile from "../MyProfile/Profile";
+import { AuthContext } from "../../context/AuthContext";
 
 const Navbar = () => {
-  const [page,setPage]=useState(false)
+  // current user data
+  const { currentUser } = useContext(AuthContext);
+  console.log(currentUser);
 
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  
+
+
+  const [page, setPage] = useState(false);
+
+  // manage drawer and modal useDisclosure
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [drawerIsOpen, setDrawerIsOpen] = useState(false);
+
+  const openModal = () => setModalIsOpen(true);
+  const closeModal = () => setModalIsOpen(false);
+
+  const openDrawer = () => setDrawerIsOpen(true);
+  const closeDrawer = () => setDrawerIsOpen(false);
+
   const [text, setText] = useState("");
 
   const onSearch = (searchTerm) => {
@@ -47,6 +68,18 @@ const Navbar = () => {
     // api to fetch the search result
     console.log("search ", searchTerm);
   };
+
+  // profile drawer
+  const btnRef = useRef();
+
+  // dispatch
+  const {dispatch}=useContext(AuthContext);
+
+  // handle logout
+  const handleLogout=()=>{
+    dispatch({type:"LOGOUT"});
+    openModal()
+  }
 
   return (
     <Box
@@ -93,11 +126,14 @@ const Navbar = () => {
             })
             .slice(0, 10)
             .map((item) => (
-              <Box _hover={{ bgColor: "#ECEFF1" }} borderRadius="5px">
+              <Box
+                key={item.title}
+                _hover={{ bgColor: "#ECEFF1" }}
+                borderRadius="5px"
+              >
                 <Box
                   onClick={() => onSearch(item.title)}
                   className="dropdown-row"
-                  key={item.title}
                   display={"flex"}
                   alignItems="center"
                   gap={"10px"}
@@ -115,24 +151,46 @@ const Navbar = () => {
       <Box>
         <Popover trigger="hover">
           <PopoverTrigger>
-            <Button
-              bgColor="white"
-              color="#4e8cf3"
-              variant="outline"
-              onClick={onOpen}
-              fontWeight="bold"
-            >
-              Login
-            </Button>
+            {currentUser ? (
+              <Wrap>
+                <WrapItem display={"flex"} alignItems="center" gap={"10px"}>
+                  {currentUser.photoURL ? (
+                    <Avatar
+                      name={currentUser.displayName}
+                      src="https://randomuser.me/api/portraits/men/32.jpg"
+                    />
+                  ) : (
+                    <Avatar
+                      name={currentUser.displayName}
+                      src="https://bit.ly/tioluwani-kolawole"
+                    />
+                  )}
+                </WrapItem>
+              </Wrap>
+            ) : (
+              <Button
+                bgColor="white"
+                color="#4e8cf3"
+                variant="outline"
+                onClick={openModal}
+                fontWeight="bold"
+              >
+                Login
+              </Button>
+            )}
           </PopoverTrigger>
           <Portal>
             <PopoverContent>
               <PopoverArrow />
-              <PopoverHeader display="flex" justifyContent="space-between">
+
+              <PopoverHeader
+                display={currentUser ? "none" : "flex"}
+                justifyContent="space-between"
+              >
                 <Text fontWeight={500}>New Customer?</Text>
                 <Text
                   color="#4e8cf3"
-                  onClick={onOpen}
+                  onClick={openModal}
                   cursor="pointer"
                   _hover={{ textDecoration: "underline" }}
                 >
@@ -147,6 +205,8 @@ const Navbar = () => {
                 display="flex"
                 alignItems="center"
                 gap="10px"
+                ref={btnRef}
+                onClick={currentUser ? openDrawer : openModal}
               >
                 <FaUserCircle color="#4e8cf3" />
                 <Text>My Profile</Text>
@@ -205,6 +265,18 @@ const Navbar = () => {
               >
                 <MdAccountBalanceWallet color="#4e8cf3" />
                 <Text>Gift Cards</Text>
+              </PopoverBody>
+              <Divider />
+              <PopoverBody
+                _hover={{ bgColor: "#E1F5FE" }}
+                cursor="pointer"
+                display={currentUser ? "flex" : "none"}
+                alignItems="center"
+                gap="10px"
+                onClick={handleLogout}
+              >
+                <RiLogoutBoxRLine color="#4e8cf3" />
+                <Text>Logout</Text>
               </PopoverBody>
             </PopoverContent>
           </Portal>
@@ -294,9 +366,24 @@ const Navbar = () => {
       </Box>
 
       {/* login modal */}
-      <Modal size='2xl' isOpen={isOpen} onClose={onClose}>
-        {page?<Reg page={page} setPage={setPage}/>:<Login page={page} setPage={setPage}/>}
+      <Modal size="2xl" isOpen={modalIsOpen} onClose={closeModal}>
+        {page ? (
+          <Reg page={page} setPage={setPage} />
+        ) : (
+          <Login onClose={closeModal} page={page} setPage={setPage} />
+        )}
       </Modal>
+
+      {/* profile drawer */}
+      <Drawer
+        size={"sm"}
+        isOpen={drawerIsOpen}
+        placement="right"
+        onClose={closeDrawer}
+        finalFocusRef={btnRef}
+      >
+        <Profile onClose={closeDrawer} />
+      </Drawer>
     </Box>
   );
 };
