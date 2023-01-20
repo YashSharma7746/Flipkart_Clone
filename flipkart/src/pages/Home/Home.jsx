@@ -3,7 +3,7 @@ import { Box, Image, Text } from "@chakra-ui/react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import data from "./data.json";
-import TopOffers from "./TopOffers";
+import CarouselDemo from "./Carousel";
 
 const Home = () => {
   return (
@@ -11,12 +11,18 @@ const Home = () => {
       <Box p="12px" w="100%">
         <Box w="100%" boxShadow="0px 11px 8px -15px #111">
           <Box
-            display={"flex"}
-            w="75%"
+            display={"grid"}
+            gridTemplateColumns={{
+              base: "repeat(3,1fr)",
+              sm: "repeat(3,1fr)",
+              "2xl": "repeat(9,1fr)",
+            }}
+            w={{ base: "85%", "2xl": "75%" }}
             m="auto"
             alignItems={"center"}
-            p="15px"
+            p={{ base: "10px 0px 10px 0px ", "2xl": "15px" }}
             justifyContent={"space-between"}
+            textAlign="center"
           >
             {data.head.map((ele) => {
               return (
@@ -25,7 +31,7 @@ const Home = () => {
                   _hover={{ color: "blue" }}
                   cursor="pointer"
                 >
-                  <Image src={ele.img} w="55px" />
+                  <Image ml="auto" mr="auto" src={ele.img} w="55px" />
                   <Text fontSize={"13px"} mt="0px" fontWeight="500">
                     {ele.title}
                   </Text>
@@ -35,43 +41,44 @@ const Home = () => {
           </Box>
         </Box>
         <Box backgroundColor={"white"} mt="15px" p="10px">
-          <Carousel axis="horizontal" autoPlay interval={"3000"} infiniteLoop>
+          <Carousel
+            axis="horizontal"
+            autoPlay
+            showThumbs={false}
+            interval={"3000"}
+            infiniteLoop
+          >
             <Box>
-              <Image src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/a01995f8c2dc7ebd.jpg?q=50" />
+              <Image src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/291f71468a6eff71.jpg?q=50" />
             </Box>
             <Box>
-              <Image src="https://rukminim1.flixcart.com/flap/1000/1000/image/5655d35aa959ffe8.jpg" />
+              <Image src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/483fc2547747864a.jpeg?q=50" />
             </Box>
             <Box>
-              <Image src="https://rukminim1.flixcart.com/flap/1000/1000/image/a9193a4988ff1328.jpg" />
+              <Image src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/2115ae301b2c5372.jpeg?q=50" />
             </Box>
             <Box>
-              <Image src="https://rukminim1.flixcart.com/flap/1000/1000/image/938d2f267807952f.jpg" />
-            </Box>
-            <Box>
-              <Image src="https://rukminim1.flixcart.com/flap/1000/1000/image/e284b77bb80114f7.jpg" />
+              <Image src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/11946434f052f86f.jpg?q=50" />
             </Box>
           </Carousel>
-          <Box
-            w="60%"
-            m="auto"
-            boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
-            p="15px"
-            cursor={"pointer"}
-            justifyContent={"space-between"}
-            alignItems="center" display={"flex"}
-          >
+          <Box w="100%" m="auto" mt="-30px">
             <Image
-              src="https://cdn0.desidime.com/attachments/photos/734395/original/Flipkart-ICICI-Bank-Cards-Offer-1024x147.jpg?1642137302"
-              w="70%"
+              cursor={"pointer"}
+              src="https://rukminim1.flixcart.com/fk-p-flap/2000/2000/image/86411e6addfb2db6.jpg?q=50"
+              w="100%"
             />
-            <Text fontSize={"25px"} fontWeight="600">
-              10% Instant Discount*
-            </Text>
           </Box>
         </Box>
+        <Box
+          margin="auto"
+          justifyContent={"center"}
+          alignItems="center"
+          mt="15px"
+        >
+          <CarouselDemo data={data.top_Offers} heading={"Top Offers"} />
+        </Box>
         <Box>
-          <TopOffers />
+          
         </Box>
       </Box>
     </Box>
