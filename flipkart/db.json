@@ -386,5 +386,797 @@
             "title": "Pigeon Rapido Touch DX Induction Cooktop",
             "img": "https://rukminim1.flixcart.com/image/612/612/k6fd47k0pkrrdj/induction-cook-top-refurbished/v/v/3/na-a-rapido-touch-dx-pigeon-original-imafzzhyg7n43mek.jpeg?q=70"
         }
-    ]
+    ],
+    "mobiles":[
+        {
+              "img":"https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/8/9/n/-original-imagc7tmhcbrarpk.jpeg?q=70",
+              "title":"POCO M4 Pro (Cool Blue, 128 GB)",
+              "price":"₹11,999",
+              "discount":"40% off",
+              "sells_price":"₹19,999",
+              "ratings":"4.3",
+              "desc":{
+                  "storage":"6 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+                  "display":"16.33 cm (6.43 inch) Full HD+ AMOLED Display",
+                  "camera":"64MP + 8MP + 2MP | 16MP Front Camera",
+                  "battery":"5000 mAh Lithium-ion Polymer Battery",
+                  "processor":"Mediatek Helio G96 Processor",
+                  "warranty":"One Year for Handset, 6 Months for Accessories"
+              }
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/r/2/1/-original-imagc7tduryuaynx.jpeg?q=70",
+              "title":"POCO M4 Pro (Power Black, 128 GB)",
+              "price":"₹11,999",
+              "discount":"40% off",
+              "sells_price":"₹19,999",
+              "ratings":"4.3",
+              "desc":{
+                  "storage":"6 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+                  "display":"16.33 cm (6.43 inch) Full HD+ AMOLED Display",
+                  "camera":"64MP + 8MP + 2MP | 16MP Front Camera",
+                  "battery": "5000 mAh Lithium-ion Polymer Battery",
+                  "processor":"Mediatek Helio G96 Processor",
+                  "warranty":"One Year for Handset, 6 Months for Accessories"
+              }
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/8/9/n/-original-imagc7tmhcbrarpk.jpeg?q=70",
+              "title":"POCO M4 Pro (Cool Blue, 64 GB)",
+              "price":"₹10,999",
+              "discount":"38% off",
+              "sells_price":"₹17,999",
+              "ratings":"4.3",
+              "desc":{
+                  "storage":"6 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+                  "display":"16.33 cm (6.43 inch) Full HD+ AMOLED Display",
+                  "camera":"64MP + 8MP + 2MP | 16MP Front Camera",
+                  "battery": "5000 mAh Lithium-ion Polymer Battery", 
+                  "processor":"Mediatek Helio G96 Processor",
+                  "warranty": "One Year for Handset, 6 Months for Accessories"
+              }
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/8/9/n/-original-imagc7tmhcbrarpk.jpeg?q=70",
+              "title":"POCO M4 Pro (Cool Blue, 128 GB)",
+              "price":"₹13,999",
+              "discount":"36% off",
+              "sells_price":"₹21,999",
+              "ratings":"4.3",
+              "desc":{
+                  "storage":"8 GB RAM | 128 GB ROM | Expandable Upto 1 TB", 
+                  "display":"16.33 cm (6.43 inch) Full HD+ AMOLED Display",
+                  "camera":"64MP + 8MP + 2MP | 16MP Front Camera",
+                  "battery":"5000 mAh Lithium-ion Polymer Battery",
+                  "processor": "Mediatek Helio G96 Processor",
+                  "warranty": "One Year for Handset, 6 Months for Accessories"
+              }
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/a/6/b/-original-imagc7tdwfp2gz4h.jpeg?q=70",
+              "title":"POCO M4 Pro (Yellow, 128 GB)",
+              "price":"₹11,999",
+              "discount":"40% off",
+              "sells_price":"₹19,999",
+              "ratings":"4.3",
+              "desc":{
+                  "storage":"6 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+                  "display":"16.33 cm (6.43 inch) Full HD+ AMOLED Display",
+                  "camera": "64MP + 8MP + 2MP | 16MP Front Camera", 
+                  "battery": "5000 mAh Lithium-ion Polymer Battery",
+                  "processor": "Mediatek Helio G96 Processor",
+                  "warranty": "One Year for Handset, 6 Months for Accessories"
+              }
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/r/2/1/-original-imagc7tduryuaynx.jpeg?q=70",
+              "title":"POCO M4 Pro (Power Black, 128 GB)",
+              "price":"₹13,999",
+              "discount":"36% off",
+              "sells_price":"₹21,999",
+              "ratings":"4.3",
+              "desc":{
+                  "storage":"8 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+                  "display":"16.33 cm (6.43 inch) Full HD+ AMOLED Display",
+                  "camera": "64MP + 8MP + 2MP | 16MP Front Camera", 
+                  "battery": "5000 mAh Lithium-ion Polymer Battery",
+                  "processor": "Mediatek Helio G96 Processor",
+                  "warranty": "One Year for Handset, 6 Months for Accessories"
+              }
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/r/2/1/-original-imagc7tduryuaynx.jpeg?q=70",
+              "title":"POCO M4 Pro (Power Black, 64 GB)",
+              "price":"₹10,999",
+              "discount":"38% off",
+              "sells_price":"₹17,999",
+              "ratings":"4.3",
+              "desc":{
+                  "storage":"6 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+                  "display":"16.33 cm (6.43 inch) Full HD+ AMOLED Display",
+                  "camera": "64MP + 8MP + 2MP | 16MP Front Camera", 
+                  "battery": "5000 mAh Lithium-ion Polymer Battery",
+                  "processor": "Mediatek Helio G96 Processor",
+                  "warranty": "One Year for Handset, 6 Months for Accessories"
+              }
+  
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/a/6/b/-original-imagc7tdwfp2gz4h.jpeg?q=70",
+              "title":"POCO M4 Pro (Yellow, 64 GB)",
+              "price":"₹10,999",
+              "discount":"38% off",
+              "sells_price":"₹17,999",
+              "ratings":"4.3",
+              "desc":{
+                  "storage":"6 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+                  "display":"16.33 cm (6.43 inch) Full HD+ AMOLED Display",
+                  "camera": "64MP + 8MP + 2MP | 16MP Front Camera", 
+                  "battery": "5000 mAh Lithium-ion Polymer Battery",
+                  "processor": "Mediatek Helio G96 Processor",
+                  "warranty": "One Year for Handset, 6 Months for Accessories"
+              }
+  
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/a/6/b/-original-imagc7tdwfp2gz4h.jpeg?q=70",
+              "title":"POCO M4 Pro (Yellow, 128 GB)",
+              "price":"₹13,999",
+              "discount":"36% off",
+              "sells_price":"₹21,999",
+              "ratings":"4.3",
+              "desc":{
+                  "storage":"8 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+                  "display":"16.33 cm (6.43 inch) Full HD+ AMOLED Display",
+                  "camera": "64MP + 8MP + 2MP | 16MP Front Camera", 
+                  "battery": "5000 mAh Lithium-ion Polymer Battery",
+                  "processor": "Mediatek Helio G96 Processor",
+                  "warranty": "One Year for Handset, 6 Months for Accessories"
+              }
+          }
+      ],
+          "girls_fashion":[
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/k66sh3k0/jean/a/q/s/32-10158707-dressberry-original-imafzzztsnxvghtc.jpeg?q=70",
+              "title":"Women Flared Mid Rise Blue Jeans",
+              "price":"₹804",
+              "sells_price":"₹2,299",
+              "discount":"65% off",
+              "brand":"Dressberry"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/kv8fbm80/jean/b/w/g/30-13852298-mast-harbour-original-imag867eush2fwwt.jpeg?q=70",
+              "title":"Women Boyfriend High Rise Blue Jeans",
+              "price":"₹944",
+              "sells_price":"₹2,699",
+              "discount":"65% off",
+              "brand":"Mast & Harbour"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/ktlu9ow0/top/6/j/5/m-jk4575-jaipur-kurti-original-imag6ww9gx5khmxb.jpeg?q=70",
+              "title":"Casual Bell Sleeves Checkered Women Black Top",
+              "price":"₹297",
+              "sells_price":"₹1,149",
+              "discount":"74% off",
+              "brand":"Jaipur Kurti"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/jean/u/i/i/-original-imaghpt9m2msjh7y.jpeg?q=70",
+              "title":"Women Mid Rise Blue Jeans",
+              "price":"₹759",
+              "sells_price":"₹1,899",
+              "discount":"60% off",
+              "brand":"FLYING MACHINE"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/l47cu4w0/trouser/f/n/c/32-kottywomenspant153-kotty-original-imagf5ncjjayz36g.jpeg?q=70",
+              "title":"Women Regular Fit Dark Blue Viscose Rayon Trousers",
+              "price":"₹349",
+              "sells_price":"₹1,999",
+              "discount":"82% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/h/h/r/xl-sfpant5571-sassafras-original-imagd36k7efqc3ud-bb.jpeg?q=70",
+              "title":"Women Regular Fit Blue Cotton Blend Trousers",
+              "price":"₹769",
+              "sells_price":"₹1,999",
+              "discount":"61% off",
+              "brand":"SASSAFRAS"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/n/m/h/m-8339501-roadster-original-imafgmmpvubtg2pu-bb.jpeg?q=70",
+              "title":"Women Striped Round Neck Green T-Shirt",
+              "price":"₹180",
+              "sells_price":"₹699",
+              "discount":"74% off",
+              "brand":"Roadster"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/klqx30w0/jean/i/t/v/32-kttladiesjeans848-kotty-original-imagyt4gu8sperbe.jpeg?q=70",
+              "title":"Women Regular High Rise Black Jeans",
+              "price":"₹699",
+              "sells_price":"₹2,999",
+              "discount":"76% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/jean/c/q/d/-original-imaghbz3vxhy2yfk.jpeg?q=70",
+              "title":"Women Flared Mid Rise Black Jeans",
+              "price":"₹959",
+              "sells_price":"₹2,399",
+              "discount":"60% off",
+              "brand":"FLYING MACHINE"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/l02r1jk0/dress/v/x/g/xs-gr6353-black-harpa-original-imagbxzqm2qehfcy.jpeg?q=70",
+              "title":"Women Bodycon Black Dress",
+              "price":"₹645",
+              "sells_price":"₹1,999",
+              "discount":"67% off",
+              "brand":"HARPA"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/l47cu4w0/trouser/f/9/a/30-kottywomenspant152-kotty-original-imagf5p82bejhkcr.jpeg?q=70",
+              "title":"Women Regular Fit Maroon Viscose Rayon Trousers",
+              "price":"₹349",
+              "sells_price":"₹1,999",
+              "discount":"82% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/jean/u/m/f/26-kttladiesjeans1011-kotty-original-imaggdfgta8fztru.jpeg?q=70",
+              "title":"Women Regular Mid Rise White Jeans",
+              "price":"₹749",
+              "sells_price":"₹1,999",
+              "discount":"62% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/j31wb680/t-shirt/x/v/r/m-1766420-roadster-original-imaeuyr5vffwrzsr.jpeg?q=70",
+              "title":"Women Printed Round Neck Yellow T-Shirt",
+              "price":"₹189",
+              "sells_price":"₹499",
+              "discount":"62% off",
+              "brand":"Roadster"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/l/n/7/xxl-sfpant5302-sassafras-original-imafvb5h3ufh9hry-bb.jpeg?q=70",
+              "title":"Women Relaxed Pink Cotton Blend Trousers",
+              "price":"₹554",
+              "sells_price":"₹1,499",
+              "discount":"63% off",
+              "brand":"SASSAFRAS"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/l47cu4w0/trouser/i/k/v/30-kottywomenspant154-kotty-original-imagf5nctpcjxabc.jpeg?q=70",
+              "title":"Women Regular Fit Dark Green Viscose Rayon Trousers",
+              "price":"₹349",
+              "sells_price":"₹1,999",
+              "discount":"82% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/9/x/i/30-kttwomenspant276-kotty-original-imagg7eagjsyyhr9.jpeg?q=70",
+              "title":"Women Regular Fit Black Polycotton Trousers",
+              "price":"₹399",
+              "sells_price":"₹1,999",
+              "discount":"80% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/jean/w/3/l/28-ttjn002759-tokyo-talkies-original-imaggzfr4stuphkq.jpeg?q=70",
+              "title":"Women Boot-Leg Mid Rise White Jeans",
+              "price":"₹474",
+              "sells_price":"₹1,899",
+              "discount":"75% off",
+              "brand":"Tokyo Talkies"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/klphn680/jean/t/v/z/30-kttladiesjeans816-kotty-original-imagys5jnut2jjjw.jpeg?q=70",
+              "title":"Women Regular High Rise Blue Jeans",
+              "price":"₹699",
+              "sells_price":"₹2,999",
+              "discount":"76% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/h/z/d/xl-sfpant5416-sassafras-original-imag36hdtwucgdjp-bb.jpeg?q=70",
+              "title":"Women Relaxed Green Pure Cotton Trousers",
+              "price":"₹645",
+              "sells_price":"₹1,699",
+              "discount":"62% off",
+              "brand":"SASSAFRAS"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/jean/y/o/r/-original-imagkpvyecexxgth.jpeg?q=70",
+              "title":"Women Skinny Mid Rise Blue Jeans",
+              "price":"₹854",
+              "sells_price":"₹2,999",
+              "discount":"71% off",
+              "brand":"VERO MODA"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/k8et4sw0/t-shirt/m/m/g/l-10778682-roadster-original-imafqfqgevpetbfh.jpeg?q=70",
+              "title":"Women Printed Round Neck Pink T-Shirt",
+              "price":"₹156",
+              "sells_price":"₹699",
+              "discount":"77% off",
+              "brand":"Roadster"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/f/q/p/28-kottywomenspant261-kotty-original-imaghe3gmpq6yrty.jpeg?q=70",
+              "title":"Women Regular Fit Black Viscose Rayon Trousers",
+              "price":"₹349",
+              "sells_price":"₹1,999",
+              "discount":"82% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/khf63680/jean/6/c/v/26-kttladiesjeans694-kotty-original-imafxg4j4ftawa6d.jpeg?q=70",
+              "title":"Women Flared High Rise Blue Jeans",
+              "price":"₹699",
+              "sells_price":"₹1,999",
+              "discount":"65% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/l44hyfk0/trouser/l/j/r/26-kottywomenspant151-kotty-original-imagf3fnhvpdzmmn.jpeg?q=70",
+              "title":"Women Regular Fit Green Viscose Rayon Trousers",
+              "price":"₹349",
+              "sells_price":"₹1,999",
+              "discount":"82% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/kirr24w0-0/jean/i/w/b/32-kttwomensjeans708-kotty-original-imafyhxgnax4fhpw.jpeg?q=70",
+              "title":"Women Regular High Rise Blue Jeans",
+              "price":"₹699",
+              "sells_price":"₹2,999",
+              "discount":"76% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/d/e/t/l-10969910-roadster-original-imafqevytjpqpgjk-bb.jpeg?q=70",
+              "title":"Women Solid Polo Neck Purple T-Shirt",
+              "price":"₹314",
+              "sells_price":"₹999",
+              "discount":"68% off",
+              "brand":"Roadster"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/jean/a/d/p/m-kttladiesjeans916-kotty-original-imagajtbhqsckbhr-bb.jpeg?q=70",
+              "title":"Women Regular High Rise Grey Jeans",
+              "price":"₹699",
+              "sells_price":"₹1,999",
+              "discount":"65% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/jean/6/a/0/32-kttladiesjeans1014-kotty-original-imaggdfgeqr5tkbt.jpeg?q=70",
+              "title":"Women Regular Mid Rise Light Green Jeans",
+              "price":"₹749",
+              "sells_price":"₹1,999",
+              "discount":"62% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/jean/3/k/z/30-ttjn002705-tokyo-talkies-original-imafyyn6cxyg6sbm-bb.jpeg?q=70",
+              "title":"Women Flared Mid Rise Light Blue Jeans",
+              "price":"₹506",
+              "sells_price":"₹1,899",
+              "discount":"73% off",
+              "brand":"Tokyo Talkies"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/jean/c/h/n/32-kttladiesjeans852-kotty-original-imagyt4gcnfcybjn-bb.jpeg?q=70",
+              "title":"Women Regular High Rise Blue Jeans",
+              "price":"₹699",
+              "sells_price":"₹2,999",
+              "discount":"76% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/t/3/v/-original-imaghekrgzuhhcqg.jpeg?q=70",
+              "title":"Women Solid Boat Neck Dark Green T-Shirt",
+              "price":"₹314",
+              "sells_price":"₹899",
+              "discount":"65% off",
+              "brand":"Roadster"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/jean/i/z/w/26-kttladiesjeans1067-kotty-original-imagkddsnfrxxfzs.jpeg?q=70",
+              "title":"Women Regular Mid Rise Dark Blue Jeans",
+              "price":"₹749",
+              "sells_price":"₹1,999",
+              "discount":"62% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/jean/j/q/o/-original-imaggd9smejhmhgd.jpeg?q=70",
+              "title":"Women Mid Rise Blue Jeans",
+              "price":"₹742",
+              "sells_price":"₹2,249",
+              "discount":"67% off",
+              "brand":"FLYING MACHINE"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/jean/w/k/3/26-kttladiesjeans686-kotty-original-imafxf8cxvausb5z-bb.jpeg?q=70",
+              "title":"Women Flared Mid Rise Blue Jeans",
+              "price":"₹699",
+              "sells_price":"₹1,999",
+              "discount":"65% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/kjabs7k0-0/jean/x/z/w/28-ttjn002702-tokyo-talkies-original-imafyvxrx8npyc5s.jpeg?q=70",
+              "title":"Women Slim Mid Rise Black Jeans",
+              "price":"₹506",
+              "sells_price":"₹1,899",
+              "discount":"73% off",
+              "brand":"Tokyo Talkies"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/l0jwbrk0/top/b/j/3/s-top05796-faballey-original-imagcb8g8emyz3xx.jpeg?q=70",
+              "title":"Casual Sleeveless Printed Women Blue Top",
+              "price":"₹600",
+              "sells_price":"₹1,500",
+              "discount":"60% off",
+              "brand":"FABALLEY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/l3hmwsw0/trouser/p/l/w/26-kttwomenspant153-kotty-original-imagehhktdkfhfqa.jpeg?q=70",
+              "title":"Women Regular Fit Dark Blue Viscose Rayon Trousers",
+              "price":"₹349",
+              "sells_price":"₹1,999",
+              "discount":"82% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/l44hyfk0/trouser/z/r/n/32-kttwomenspant171-kotty-original-imagf35xywgnhs8b.jpeg?q=70",
+              "title":"Women Flared Black Viscose Rayon Trousers",
+              "price":"₹349",
+              "sells_price":"₹1,999",
+              "discount":"82% off",
+              "brand":"KOTTY"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/t/i/b/s-trs00002173-street-9-original-imafv79hv77mz9wc-bb.jpeg?q=70",
+              "title":"Women Regular Fit Multicolor Cotton Blend Trousers",
+              "price":"₹724",
+              "sells_price":"₹2,299",
+              "discount":"68% off",
+              "brand":"STREET9"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/tight/y/n/j/s-67357101-puma-original-imagdd6d5hvuzzy6-bb.jpeg?q=70",
+              "title":"Solid Women Black Tights",
+              "price":"₹699",
+              "sells_price":"₹1,999",
+              "discount":"65% off",
+              "brand":"PUMA"
+          }
+      ],
+      "mens_fashion":[
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/ku04o7k0/shirt/o/z/y/40-asabsh1495-arrow-sport-original-imag786ksnqk7s4k.jpeg?q=70",
+              "title":"Men Regular Fit Checkered Spread Collar Casual Shirt",
+              "price":"₹919",
+              "sells_price":"₹2,299",
+              "discount":"60% off",
+              "brand":"Arrow Sport"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/j/r/w/-original-imagf4sea6s7zbhy-bb.jpeg?q=70",
+              "title":"Men Slim Fit Printed Cut Away Collar Casual Shirt",
+              "price":"₹559",
+              "sells_price":"₹1,399",
+              "discount":"60% off",
+              "brand":"Allen Solly"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/l/z/6/-original-imafw8jskuzsyqhw.jpeg?q=70",
+              "title":"Men Slim Fit Printed Spread Collar Casual Shirt",
+              "price":"₹559",
+              "sells_price":"₹1,399",
+              "discount":"60% off",
+              "brand":"Allen Solly"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/c/j/s/-original-imaghcpkygmeqyuc.jpeg?q=70",
+              "title":"Men Slim Fit Grey Viscose Rayon Trousers",
+              "price":"₹873",
+              "sells_price":"₹2,299",
+              "discount":"62% off",
+              "brand":"Raymond"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/8/0/g/40-xmss12230-b6-parx-original-imaggc6uucnpf3as.jpeg?q=70",
+              "title":"Men Slim Fit Checkered Casual Shirt",
+              "price":"₹721",
+              "sells_price":"₹1,999",
+              "discount":"63% off",
+              "brand":"PARX"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/jxp08sw0/shirt/9/j/h/38-2284633-roadster-original-imafg3g2uxfgrngg.jpeg?q=70",
+              "title":"Men Slim Fit Washed Spread Collar Casual Shirt",
+              "price":"₹686",
+              "sells_price":"₹1,999",
+              "discount":"65% off",
+              "brand":"Roadster"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/t/l/f/-original-imaggbkwywzpvyxv.jpeg?q=70",
+              "title":"Men Slim Fit Checkered Spread Collar Casual Shirt",
+              "price":"₹711",
+              "sells_price":"₹2,499",
+              "discount":"71% off",
+              "brand":"KILLER"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/l19m93k0/shirt/6/8/s/44-alsfvcuft85981-allen-solly-original-imagcv6ngnm3aj3c.jpeg?q=70",
+              "title":"Men Regular Fit Checkered Spread Collar Casual Shirt",
+              "price":"₹919",
+              "sells_price":"₹2,299",
+              "discount":"60% off",
+              "brand":"Allen Solly"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/o/t/40-xmss12235-r6-parx-original-imaggbzty95g9kwx.jpeg?q=70",
+              "title":"Men Slim Fit Checkered Casual Shirt",
+              "price":"₹681",
+              "sells_price":"₹2,049",
+              "discount":"66% off",
+              "brand":"PARX"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/l45xea80/shirt/g/x/a/-original-imagf4ukub6adkzh.jpeg?q=70",
+              "title":"Men Slim Fit Checkered Cut Away Collar Casual Shirt",
+              "price":"₹629",
+              "sells_price":"₹1,799",
+              "discount":"65% off",
+              "brand":"Allen Solly"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/2/u/l/-original-imaghm9a5gjqbvkz.jpeg?q=70",
+              "title":"Men Tapered Light Green Cotton Blend Trousers",
+              "price":"₹1,049",
+              "sells_price":"₹2,799",
+              "discount":"62% off",
+              "brand":"VAN HEUSEN SPORT"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/kq9ta4w0/shirt/f/t/6/39-asabsh1651-arrow-sport-original-imag4bfvqnjhs9wv.jpeg?q=70",
+              "title":"Men Slim Fit Checkered Casual Shirt",
+              "price":"₹879",
+              "sells_price":"₹2,199",
+              "discount":"60% off",
+              "brand":"Arrow Sport"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/i/m/x/40-rmsx11662-b2-raymond-original-imagj4sfwz7chptv.jpeg?q=70",
+              "title":"Men Slim Fit Self Design Spread Collar Formal Shirt",
+              "price":"₹759",
+              "sells_price":"₹1,999",
+              "discount":"62% off",
+              "brand":"Raymond"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/kfoapow0-0/shirt/g/j/w/m-hlsh008832-highlander-original-imafw2ggmtfqgqkj.jpeg?q=70",
+              "title":"Men Slim Fit Solid Mandarin Collar Casual Shirt",
+              "price":"₹349",
+              "sells_price":"₹999",
+              "discount":"65% off",
+              "brand":"HIGHLANDER"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/e/m/x/m-wmshsm4330-wrangler-original-imaghk8gq9wzvfrf.jpeg?q=70",
+              "title":"Men Slim Fit Checkered Cut Away Collar Casual Shirt",
+              "price":"₹835",
+              "sells_price":"₹2,199",
+              "discount":"62% off",
+              "brand":"Wrangler"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/l0cr4i80/shirt/5/6/i/38-xmss11791-n2-parx-original-imagc5wpkhhamruu.jpeg?q=70",
+              "title":"Men Slim Fit Printed Casual Shirt",
+              "price":"₹759",
+              "sells_price":"₹1,899",
+              "discount":"60% off",
+              "brand":"PARX"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/g/7/n/40-xmss12238-g4-parx-original-imaggc5f3mafusu9.jpeg?q=70",
+              "title":"Men Slim Fit Checkered Casual Shirt",
+              "price":"₹681",
+              "sells_price":"₹2,049",
+              "discount":"66% off",
+              "brand":"PARX"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/x/f/7/32-rmts04736-b6-raymond-original-imagjvz73kq6xysz.jpeg?q=70",
+              "title":"Men Slim Fit Dark Blue Viscose Rayon Trousers",
+              "price":"₹873",
+              "sells_price":"₹2,299",
+              "discount":"62% off",
+              "brand":"Raymond"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/n/t/4/-original-imagkphbujx4azxw.jpeg?q=70",
+              "title":"Men Regular Fit Solid Casual Shirt",
+              "price":"₹502",
+              "sells_price":"₹1,499",
+              "discount":"66% off",
+              "brand":"Roadster"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/v/p/0/44-xmss11430-r7-parx-original-imaggg9yvcah34yd.jpeg?q=70",
+              "title":"Men Slim Fit Striped Casual Shirt",
+              "price":"₹759",
+              "sells_price":"₹1,899",
+              "discount":"60% off",
+              "brand":"PARX"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/r/z/w/-original-imaghm9aygj2fgng.jpeg?q=70",
+              "title":"Men Tapered Green Cotton Lycra Blend Trousers",
+              "price":"₹1,049",
+              "sells_price":"₹2,799",
+              "discount":"62% off",
+              "brand":"VAN HEUSEN SPORT"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/w/r/5/xl-wmshsm4314-wrangler-original-imaggw7wxkadgtha.jpeg?q=70",
+              "title":"Men Slim Fit Checkered Cut Away Collar Casual Shirt",
+              "price":"₹835",
+              "sells_price":"₹2,199",
+              "discount":"62% off",
+              "brand":"Wrangler"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/m/r/l/-original-imagj5yf7yggrjpv.jpeg?q=70",
+              "title":"Men Regular Fit Grey Viscose Rayon Trousers",
+              "price":"₹959",
+              "sells_price":"₹2,399",
+              "discount":"60% off",
+              "brand":"ARROW"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/jtoorrk0/shirt/7/d/9/44-assfwspf920308-allen-solly-original-imafevfqr6aqemf8.jpeg?q=70",
+              "title":"Men Slim Fit Solid Casual Shirt",
+              "price":"₹919",
+              "sells_price":"₹2,299",
+              "discount":"60% off",
+              "brand":"Allen Solly"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/z/k/u/-original-imagj4pbthvv6y8c.jpeg?q=70",
+              "title":"Men Slim Fit Solid Formal Shirt",
+              "price":"₹759",
+              "sells_price":"₹1,999",
+              "discount":"62% off",
+              "brand":"Raymond"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/x/5/6/32-rmts04730-b8-raymond-original-imagjycnvzjzzzhx.jpeg?q=70",
+              "title":"Men Slim Fit Dark Blue Viscose Rayon Trousers",
+              "price":"₹874",
+              "sells_price":"₹2,499",
+              "discount":"65% off",
+              "brand":"Raymond"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/kflftzk0-0/trouser/w/5/j/32-hltr003958-highlander-original-imafwyf6xvxcefq2.jpeg?q=70",
+              "title":"Men Slim Fit Green Cotton Blend Trousers",
+              "price":"₹495",
+              "sells_price":"₹1,549",
+              "discount":"68% off",
+              "brand":"HIGHLANDER"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/l3j2cnk0/shirt/g/k/r/39-alsfvcufl04919-allen-solly-original-imagemrfwyghzh3p.jpeg?q=70",
+              "title":"Men Regular Fit Checkered Casual Shirt",
+              "price":"₹999",
+              "sells_price":"₹2,499",
+              "discount":"60% off",
+              "brand":"Allen Solly"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/l/9/l/-original-imaghcpgk9fhvh58.jpeg?q=70",
+              "title":"Men Slim Fit Brown Viscose Rayon Trousers",
+              "price":"₹873",
+              "sells_price":"₹2,299",
+              "discount":"62% off",
+              "brand":"Raymond"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/m/x/i/-original-imaggcycutkyggbt.jpeg?q=70",
+              "title":"Men Slim Fit Black Viscose Rayon Trousers",
+              "price":"₹839",
+              "sells_price":"₹2,399",
+              "discount":"65% off",
+              "brand":"Raymond"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/i/u/t/32-rmts04736-g8-raymond-original-imagjwjvt6schhtp.jpeg?q=70",
+              "title":"Men Slim Fit Grey Viscose Rayon Trousers",
+              "price":"₹873",
+              "sells_price":"₹2,299",
+              "discount":"62% off",
+              "brand":"Raymond"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/l05lx8w0/trouser/x/q/r/44-astfqsrf381097-allen-solly-original-imagcy23dduwxqmy.jpeg?q=70",
+              "title":"Men Slim Fit Khaki Cotton Blend Trousers",
+              "price":"₹999",
+              "sells_price":"₹2,499",
+              "discount":"60% off",
+              "brand":"Allen Solly"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/j/v/z/-original-imaggcyctcqggeyw.jpeg?q=70",
+              "title":"Men Slim Fit Solid Formal Shirt",
+              "price":"₹759",
+              "sells_price":"₹1,999",
+              "discount":"62% off",
+              "brand":"Raymond"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/trouser/u/w/m/-original-imaggehygngae7ng.jpeg?q=70",
+              "title":"Men Slim Fit Khaki Cotton Blend Trousers",
+              "price":"₹956",
+              "sells_price":"₹2,899",
+              "discount":"67% off",
+              "brand":"KILLER"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/l5h2xe80/shirt/w/0/q/-original-imagg4w3nahrc5ez.jpeg?q=70",
+              "title":"Men Regular Fit Checkered Casual Shirt",
+              "price":"₹679",
+              "sells_price":"₹1,699",
+              "discount":"60% off",
+              "brand":"Allen Solly"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/ks3jjbk0/shirt/i/9/j/44-xmss11049-r8-parx-original-imag5pzfz39jkahx.jpeg?q=70",
+              "title":"Men Slim Fit Solid Casual Shirt",
+              "price":"₹879",
+              "sells_price":"₹2,199",
+              "discount":"60% off",
+              "brand":"PARX"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/7/d/v/40-rmsx11664-n2-raymond-original-imagj4s49cfhetye.jpeg?q=70",
+              "title":"Men Slim Fit Self Design Spread Collar Formal Shirt",
+              "price":"₹759",
+              "sells_price":"₹1,999",
+              "discount":"62% off",
+              "brand":"Raymond"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/o/i/a/m-lmshsm3220-lee-original-imagh2jzgagx5bcm.jpeg?q=70",
+              "title":"Men Slim Fit Solid Button Down Collar Casual Shirt",
+              "price":"₹730",
+              "sells_price":"₹2,199",
+              "discount":"66% off",
+              "brand":"LEE"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/4/x/h/-original-imagj4pcghzbz9nd.jpeg?q=70",
+              "title":"Men Slim Fit Checkered Formal Shirt",
+              "price":"₹759",
+              "sells_price":"₹1,999",
+              "discount":"62% off",
+              "brand":"Raymond"
+          },
+          {
+              "img":"https://rukminim1.flixcart.com/image/612/612/kosxzm80/shirt/3/c/d/46-alsfvcufj64747-allen-solly-original-imag36ayuykzxagz.jpeg?q=70",
+              "title":"Men Regular Fit Self Design Spread Collar Casual Shirt",
+              "price":"₹919",
+              "sells_price":"₹2,299",
+              "discount":"60% off",
+              "brand":"Allen Solly"
+          }
+      ]
 }
