@@ -226,3 +226,141 @@ export const BeautyCarousalData2=()=>{
             
             }
         
+            export const BeautyCarousalData5=()=>{
+
+                return([
+                {
+                    image:"https://rukminim1.flixcart.com/image/150/150/jzsqky80/tea/9/j/n/750-gold-regular-tea-tata-leaves-original-imafjqj7z4mqtgjs.jpeg?q=70",
+                    price:"Up to 40% Off",
+                    name: "Tata",
+                    subtext:"Tea and More"
+                },
+                {
+                    image:"https://rukminim1.flixcart.com/image/150/150/kjabs7k0-0/ready-mix/q/r/0/200-chocolate-cake-mix-eggless-wheat-and-maida-free-baking-mix-original-imafyvzqgvz5a7xc.jpeg?q=70",
+                    price:"Upto 85% Off",
+                    name: "Baking Mix",
+                    subtext:"Slurrp Farm & More"
+                },
+                {
+                    image:"https://rukminim1.flixcart.com/image/150/150/jrkyfm80/tea/x/j/h/1-gold-regular-tea-leaves-tata-original-imafdcz7jhd5gvtf.jpeg?q=70",
+                    price:"Upto 70% Off",
+                    name: "Tea Powders",
+                    subtext:"Tata, Lipton & More"
+                },
+                {
+                    image:"https://rukminim1.flixcart.com/image/150/150/k2m6ufk0/cereal-flake/e/h/f/1000-whole-oatmeal-with-chia-and-real-whole-fruits-high-in-original-imafhxg3szhbcjn2.jpeg?q=70",
+                    price:"Upto 60% Off",
+                    name: "True Elements",
+                    subtext:"Breakfast Cereal, Bars &..."
+                },
+                
+                {
+                
+                    image:"https://rukminim1.flixcart.com/image/150/150/k1118cw0/coffee/e/f/5/3-instant-green-coffee-lemon-30-sachet-instant-coffee-sachet-original-imafkh4dhmhgguyj.jpeg?q=70",
+                    price:"Up to 50% Off",
+                    name: "Neuherbs",
+                    subtext:"Green Coffee & More"
+                },
+                {
+                
+                    image:"https://rukminim1.flixcart.com/image/150/150/klphn680/coffee/e/p/9/200-xtra-instant-coffee-pouch-continental-coffee-original-imagyrtqhmnt3gkg.jpeg?q=70",
+                    price:"Up to 60% Off",
+                    name: "Continental",
+                    subtext:"Coffe Poder"
+                }
+                ,
+                {
+                
+                    image:"https://rukminim1.flixcart.com/image/150/150/kim1aq80/coffee/m/g/g/200-organic-green-coffee-beans-for-weight-loss-coffee-beans-original-imafydyuhv7fbhbz.jpeg?q=70",
+                    price:"Up to 60% Off",
+                    name: "Nutrovally",
+                    subtext:"Green Coffe & More"
+                },
+                {
+                
+                    image:"https://rukminim1.flixcart.com/image/150/150/jqe38280/nut-dry-fruit/z/p/r/750-california-almonds-250g-cashews-250g-and-raisins-250g-combo-original-imafcb3gycepq5us.jpeg?q=70",
+                    price:"Up to 58% Off",
+                    name: "Eighty7",
+                    subtext:"Nuts & Dry Fruits"
+                },
+                
+                
+                ])
+                
+                
+                
+                
+                }
+
+
+                export const BeautyCarousalData6=()=>{
+
+                    return([
+                    {
+                        image:"https://rukminim1.flixcart.com/image/150/150/k0r15e80/cycle/x/u/f/sapphire-18-5-hero-single-speed-original-imafkhfyxgggvfzv.jpeg?q=70",
+                        price:"From ₹4499",
+                        name: "Cycles",
+                        subtext:"Hero, Hercules & More"
+                    },
+                    {
+                        image:"https://rukminim1.flixcart.com/image/150/150/k5o7r0w0/tent/h/c/x/portable-waterproof-camping-st-1525-strauss-original-imafzatryj7hy6g3.jpeg?q=70",
+                        price:"Min 30% Off",
+                        name: "Camping Tents",
+                        subtext:"Staruss, Wildcraft & more"
+                    },
+                    {
+                        image:"https://rukminim1.flixcart.com/image/150/150/kae95e80/board/d/x/6/full-size-carrom-board-large-32-inches-with-coins-2-striker-and-original-imafrz52yspfchgq.jpeg?q=70",
+                        price:"Upto 70% Off",
+                        name: "Carrom",
+                        subtext:"Grab now!"
+                    },
+                    {
+                        image:"https://rukminim1.flixcart.com/image/150/150/j1l10nk0/bat/y/z/d/700-size-5-5-na-ceat-original-imaestuqrtzgfsng.jpeg?q=70",
+                        price:"Upto 70% Off",
+                        name: "Carrom",
+                        subtext:"Grab now!"
+                    },
+                    
+                    {
+                    
+                        image:"https://rukminim1.flixcart.com/image/150/150/j1l10nk0/bat/y/z/d/700-size-5-5-na-ceat-original-imaestuqrtzgfsng.jpeg?q=70",
+                        price:"From ₹249",
+                        name: "Cricket Bat",
+                        subtext:"CEAT & MRF"
+                    },
+                    {
+                    
+                        image:"https://rukminim1.flixcart.com/image/150/150/jkk1hu80/bat/a/x/p/1162-ms-dhoni-run-short-handle-9332921115152-spartan-original-imaf7vhqhzxsxfwk.jpeg?q=70",
+                        price:"Min 40% Off",
+                        name: "Cricket Bats",
+                        subtext:"Spartan,SS & more"
+                    }
+                    ,
+                    {
+                    
+                        image:"https://rukminim1.flixcart.com/image/150/150/jusp3m80/rowing-machine/n/j/v/rm-201-iris-original-imaffzv7qmmvsatq.jpeg?q=70",
+                        price:"Min 40% Off",
+                        name: "Rowing Machine",
+                        subtext:"Grab Now!"
+                    },
+                    {
+                    
+                        image:"https://rukminim1.flixcart.com/image/150/150/xif0q/fitness-bench/l/2/q/47-250-phelix-20-in-1-multipurpose-bench-with-double-support-original-imagghcfe9fwyjgx.jpeg?q=70",
+                        price:"Up to 80% Off",
+                        name: "Fitness Bench",
+                        subtext:"Buy Now!"
+                    },
+                    {
+                    
+                        image:"https://rukminim1.flixcart.com/image/150/150/jms25jk0-1/exercise-bike/r/6/z/rpm1001-airbike-with-back-seat-and-free-installation-rpm-fitness-original-imaf9m8puegmh3zf.jpeg?q=70",
+                        price:"From ₹4,799",
+                        name: "Air Bikes",
+                        subtext:"Buy Now!"
+                    },
+                    
+                    ])
+                    
+                    
+                    
+                    
+                    }

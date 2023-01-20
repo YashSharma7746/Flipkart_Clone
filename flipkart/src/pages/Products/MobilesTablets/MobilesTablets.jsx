@@ -1,8 +1,9 @@
 import React from "react";
 import { Text, Box, Image } from "@chakra-ui/react";
 import ImageSlider from "./ImageSlider";
-
+import { useNavigate } from "react-router-dom";
 export const MobilesTablets = () => {
+  const navigate = useNavigate();
   return (
     <Box bg="#f1f3f6" w="100%" p="10px">
       <Text
@@ -29,6 +30,10 @@ export const MobilesTablets = () => {
         display={"block"}
         m="auto"
         w="100%"
+        cursor="pointer"
+        onClick={() => {
+          navigate("/poco");
+        }}
       />
 
       <Box

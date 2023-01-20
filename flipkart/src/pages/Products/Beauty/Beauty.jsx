@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, Box, Image, Button} from "@chakra-ui/react";
 import ProductsCarousel from "../ProductsCarousel/ProductsCarousel";
-import { BeautyCarousalData1, BeautyCarousalData2, BeautyCarousalData3, BeautyCarousalData4 } from './Beauty.Carousel.Data';
+import { BeautyCarousalData1, BeautyCarousalData2, BeautyCarousalData3, BeautyCarousalData4, BeautyCarousalData5, BeautyCarousalData6 } from './Beauty.Carousel.Data';
 export const Beauty = () => {
   return (
     <Box w="100%" p="10px" bg="#f1f3f6">
@@ -235,6 +235,57 @@ export const Beauty = () => {
         </Button>
       </Box>
       <ProductsCarousel data={BeautyCarousalData4()}/>
+      <Box   padding={"10px"}
+        w="100%"
+        display={"flex"}
+        justifyContent="space-between"
+        alignItems="center">
+      <Text
+          textAlign={"left"}
+          fontFamily="Roboto, Arial, sans-serif"
+          fontSize="22px"
+          fontWeight="500"
+          lineHeight="25px"
+          color="#212121"
+          ml="15px"
+        >
+       Food Essentials
+        </Text>
+        <Button
+          bg={"#2874f5"}
+          color="white"
+          _hover={{ borderRadius: "20PX", bg: "#2874f5" }}
+        >
+        VIEW ALL
+        </Button>
+      </Box>
+      <ProductsCarousel data={BeautyCarousalData5()}/>
+      <Box   padding={"10px"}
+        w="100%"
+        display={"flex"}
+        justifyContent="space-between"
+        alignItems="center">
+      <Text
+          textAlign={"left"}
+          fontFamily="Roboto, Arial, sans-serif"
+          fontSize="22px"
+          fontWeight="500"
+          lineHeight="25px"
+          color="#212121"
+          ml="15px"
+        >
+     Sports & Fitness Equipment
+        </Text>
+        <Button
+          bg={"#2874f5"}
+          color="white"
+          _hover={{ borderRadius: "20PX", bg: "#2874f5" }}
+        >
+        VIEW ALL
+        </Button>
+      </Box>
+      <ProductsCarousel data={BeautyCarousalData6()}/>
+
     </Box>
   )
 }
