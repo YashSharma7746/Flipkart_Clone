@@ -1,5 +1,8 @@
 import { Route, Routes } from "react-router-dom";
+
 import { Notfound } from "../pages/NotFound/Notfound";
+import Home from "../pages/Home/Home";
+
 import { Beauty } from "../pages/Products/Beauty/Beauty";
 import { Electronics } from "../pages/Products/Electronics/Electronics";
 import { Fashion } from "../pages/Products/Fashion/Fashion";
@@ -15,6 +18,7 @@ import { TvsAppliances } from "../pages/Products/TvsAppliances/TvsAppliances";
 const AllRoutes = () => {
   return (
     <Routes>
+      <Route path="/" element={<Home/>}></Route>
       <Route path="/beauty" element={<Beauty />} />
       <Route path="/electronics" element={<Electronics />} />
       <Route path="/fashion" element={<Fashion />} />
