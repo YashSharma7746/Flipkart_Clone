@@ -9,7 +9,7 @@ import { AddToCartApi, DelCartItemApi, GetCartDataApi } from "./cart.api";
 
 export const addToCart = (el) => async (dispatch) => {
   dispatch({ type: CART_LOADING });
-  let data = await AddToCartApi(el);
+  let data = await AddToCartApi({ ...el });
   dispatch({ type: ADD_TO_CART, payload: el });
 };
 
