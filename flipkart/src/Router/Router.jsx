@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Home from "../pages/Home/Home";
 import { Beauty } from "../pages/Products/Beauty/Beauty";
 import { Electronics } from "../pages/Products/Electronics/Electronics";
 import { Fashion } from "../pages/Products/Fashion/Fashion";
@@ -9,7 +10,6 @@ import { MobilesTablets } from "../pages/Products/MobilesTablets/MobilesTablets.
 import { Poco } from "../pages/Products/MobilesTablets/Poco";
 import { Top } from "../pages/Products/TopOffers/Top";
 import { TvsAppliances } from "../pages/Products/TvsAppliances/TvsAppliances";
-import Home from "../pages/Home/Home";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 const AllRoutes = () => {
