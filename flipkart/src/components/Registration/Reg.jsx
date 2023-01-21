@@ -40,6 +40,10 @@ const Reg = ({page,setPage}) => {
   const [showConfirmPwd, setShowConfirmPwd] = useState(false);
   const [isChecked,setIsChecked]=useState(false)
 
+  const [name, setName] = useState("");
+  const [validName, setValidName] = useState(false);
+  const [nameFocus, setNameFocus] = useState(false);
+
 
   const [email, setEmail] = useState("");
   const [validEmail, setValidEmail] = useState(false);
@@ -54,7 +58,10 @@ const Reg = ({page,setPage}) => {
   const [matchFocus, setMatchFocus] = useState(false);
 
 
-  
+  useEffect(() => {
+    setValidName(name.length>=3&&name.length<=20);
+    // console.log(validName)
+  }, [name]);
   
 
 
@@ -80,7 +87,7 @@ const Reg = ({page,setPage}) => {
         // Signed in 
         const user = userCredential.user;
         updateProfile(user, {
-          displayName: email
+          displayName: name
         });
         setPage(false)
       })
@@ -110,6 +117,34 @@ const Reg = ({page,setPage}) => {
           {/* right side */}
           <Box className="right_col">
             <Box  p={"20px 40px"}>
+            <FormControl id="user">
+            <FormLabel display={'flex'} alignItems='center'>
+              Name
+              <FaCheck
+                className={validName ? "valid" : "hide"}
+              />
+              <ImCross
+                className={validName || !name ? "hide" : "invalid"}
+              />
+            </FormLabel>
+            <Input
+              type="text"
+              name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Sumit Pokhriyal"
+              onBlur={() => setNameFocus(true)}
+            />
+            <Text
+              className={
+                nameFocus && !validName ? "instructions" : "offscreen"
+              }
+              display={'flex'} alignItems='center'
+            >
+              <BsFillExclamationTriangleFill />
+              User name allowed from 3-20 characters.
+            </Text>
+          </FormControl>
           <FormControl id="email">
             <FormLabel display={'flex'} alignItems='center'>
               Email
@@ -238,7 +273,7 @@ const Reg = ({page,setPage}) => {
             <Box>
               <Button
                 isDisabled={
-                !validEmail || !validPwd || !validMatch || !isChecked ? true : false
+                  !validName || !validEmail || !validPwd || !validMatch || !isChecked ? true : false
                 }
                 onClick={handleSubmit}
                 w={"100%"}

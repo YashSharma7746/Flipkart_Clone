@@ -91,6 +91,8 @@ const Navbar = () => {
       w="100%"
       h="70px"
       p={4}
+      position='fixed'
+      zIndex={'999'}
     >
       {/* web site's logo */}
       <Box display={"flex"} alignItems="center" h="40px">
@@ -366,7 +368,7 @@ const Navbar = () => {
       </Box>
 
       {/* login modal */}
-      <Modal size="2xl" isOpen={modalIsOpen} onClose={closeModal}>
+      <Modal size="3xl" isOpen={modalIsOpen} onClose={closeModal}>
         {page ? (
           <Reg page={page} setPage={setPage} />
         ) : (

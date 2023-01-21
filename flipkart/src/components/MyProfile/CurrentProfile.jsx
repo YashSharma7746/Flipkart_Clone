@@ -3,7 +3,6 @@ import {
     Box,
     Text,
     Stack,
-    IconButton,
     Button,
   } from '@chakra-ui/react';
 import { useContext } from 'react';

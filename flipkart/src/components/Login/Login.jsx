@@ -13,7 +13,9 @@ import {
   Stack,
   InputRightElement,
   InputGroup,
+  Center,
 } from "@chakra-ui/react";
+import { FcGoogle } from "react-icons/fc";
 import "./Login.css";
 import { Link as RouteLink } from "react-router-dom";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
@@ -22,34 +24,30 @@ import { auth } from "../../firebase";
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 
-const Login = ({page,setPage,onClose}) => {
+const Login = ({ page, setPage, onClose }) => {
   const [showPassword, setShowPassword] = useState(false);
-  const [email,setEmail]=useState('');
-  const [pwd,setPwd]=useState('');
+  const [email, setEmail] = useState("");
+  const [pwd, setPwd] = useState("");
 
-  const {dispatch}=useContext(AuthContext)
+  const { dispatch } = useContext(AuthContext);
 
+  const handleLogin = () => {
+    dispatch({ type: "LOGIN_START" });
 
-  const handleLogin=()=>{
-
-    dispatch({type:"LOGIN_START"})
-
-    try{
-      signInWithEmailAndPassword(auth, email, pwd)
-      .then((userCredential) => {
-        // Signed in 
+    try {
+      signInWithEmailAndPassword(auth, email, pwd).then((userCredential) => {
+        // Signed in
         const user = userCredential.user;
         // ...
-        dispatch({type:"LOGIN_SUCCESS",payload:user})
+        dispatch({ type: "LOGIN_SUCCESS", payload: user });
 
-        onClose()
+        onClose();
         // console.log(user)
       });
-    }catch(error){
-      dispatch({type:"LOGIN_FAILURE"})
+    } catch (error) {
+      dispatch({ type: "LOGIN_FAILURE" });
     }
-    
-  }
+  };
 
   return (
     <>
@@ -70,46 +68,89 @@ const Login = ({page,setPage,onClose}) => {
 
           {/* right side */}
           <Box className="right_col">
-            <Box display={'flex'} flexDirection='column' justifyContent='space-between' gap="20px" p={"20px 40px"}>
-          <FormControl id="email" isRequired>
-            <FormLabel>Email</FormLabel>
-            <Input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Enter your Email" />
-          </FormControl>
-          <FormControl id="password" isRequired>
-            <FormLabel>Password</FormLabel>
-            <InputGroup>
-              <Input
-                type={showPassword ? "text" : "password"}
-                value={pwd} onChange={(e)=>setPwd(e.target.value)}
-                placeholder="Enter your password"
-              />
-              <InputRightElement h={"full"}>
+            <Box
+              display={"flex"}
+              flexDirection="column"
+              justifyContent="space-between"
+              gap="20px"
+              p={"20px 40px"}
+            >
+              <FormControl id="email" isRequired>
+                <FormLabel>Email</FormLabel>
+                <Input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your Email"
+                />
+              </FormControl>
+              <FormControl id="password" isRequired>
+                <FormLabel>Password</FormLabel>
+                <InputGroup>
+                  <Input
+                    type={showPassword ? "text" : "password"}
+                    value={pwd}
+                    onChange={(e) => setPwd(e.target.value)}
+                    placeholder="Enter your password"
+                  />
+                  <InputRightElement h={"full"}>
+                    <Button
+                      variant={"ghost"}
+                      onClick={() =>
+                        setShowPassword((showPassword) => !showPassword)
+                      }
+                    >
+                      {showPassword ? <ViewIcon /> : <ViewOffIcon />}
+                    </Button>
+                  </InputRightElement>
+                </InputGroup>
+                <Box
+                mt='10px'
+                color={"blue.500"}
+              >
+                <Text>Forgot your Password?</Text>
+                
+              </Box>
+              </FormControl>
+              <Stack spacing={6}>
+                <Box>
+                  <Button
+                    w={"100%"}
+                    onClick={handleLogin}
+                    colorScheme={"blue"}
+                    variant={"solid"}
+                  >
+                    Log In
+                  </Button>
+                </Box>
+              </Stack>
+              <Center>or</Center>
+              <Center >
                 <Button
-                  variant={"ghost"}
-                  onClick={() =>
-                    setShowPassword((showPassword) => !showPassword)
-                  }
+                  w={"full"}
+                  maxW={"md"}
+                  variant={"outline"}
+                  leftIcon={<FcGoogle />}
                 >
-                  {showPassword ? <ViewIcon /> : <ViewOffIcon />}
+                  <Center>
+                    <Text>Sign in with Google</Text>
+                  </Center>
                 </Button>
-              </InputRightElement>
-            </InputGroup>
-          </FormControl>
-          <Stack spacing={6}>
-            <Box>
-              <Button w={"100%"} onClick={handleLogin} colorScheme={"blue"} variant={"solid"}>
-                Log In
-              </Button>
+              </Center>
+              <Box
+                mt={"60px"}
+                color={"blue.500"}
+                display={"flex"}
+                gap={1}
+                justifyContent="center"
+              >
+                <Text>New to VIP Mart?</Text>
+                <RouteLink to={"#"}>
+                  <Text onClick={() => setPage(true)}>Create an account</Text>
+                </RouteLink>
+              </Box>
+              
             </Box>
-          </Stack>
-
-          <Box mt={'160px'} color={"blue.500"} display={"flex"} gap={1} justifyContent="center">
-            <Text>New to VIP Mart?</Text>
-            <RouteLink to={"#"}>
-              <Text onClick={()=>setPage(true)}>Create an account</Text>
-            </RouteLink>
-          </Box>
-          </Box>
           </Box>
         </Box>
       </ModalContent>

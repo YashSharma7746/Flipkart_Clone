@@ -9,8 +9,10 @@ import {
 } from "@chakra-ui/react";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
-// import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import { v4 as uuid } from "uuid";
+import { storage } from "../../firebase";
+import { EmailAuthProvider, reauthenticateWithCredential, updateEmail, updateProfile } from "firebase/auth";
 
 export default function EditProfile({ setIsProfile }) {
   const [data, setData] = useState({
@@ -18,60 +20,102 @@ export default function EditProfile({ setIsProfile }) {
     newEmail: "",
     oldPassword: "",
   });
-  const [img,setImg]=useState(null)
+  const [img, setImg] = useState(null);
   const { currentUser } = useContext(AuthContext);
+
 
   const handleChange = (e) => {
     setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-//   const handleUpdate=(e)=>{
+  const handleUpdate = async (e) => {
+    e.preventDefault();
 
-//     if(img){
-//         const storageRef = ref(storage, "usersImages/"+);
+    if (img) {
+      const storageRef = ref(storage, "usersImages/" + uuid());
+      const uploadTask = uploadBytesResumable(storageRef, img);
+      console.log(uploadTask)
+      console.log(storageRef,storage)
+      uploadTask.on(
+        (error) => {},
+        () => {
+          getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
+            console.log(downloadURL)
+            await updateProfile(currentUser, {
+              photoURL: downloadURL,
+              displayName: data.username,
+            });
 
-//         const uploadTask = uploadBytesResumable(storageRef, file);
+            const credential = EmailAuthProvider.credential(
+              currentUser.email,
+              data.oldPassword
+            );
 
-//         uploadTask.on( 
-//           (error) => {}, 
-//           () => {
-//             getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-//               console.log('File available at', downloadURL);
-//             });
-//           }
-//         );
-//     }else{
+            await reauthenticateWithCredential(currentUser, credential).then(
+              async () => {
+                // User re-authenticated.
+                await updateEmail(currentUser, data.newEmail);
+              }
+            );
+          });
+        }
+      );
+    } else {
+      await updateProfile(currentUser, {
+        displayName: data.username,
+      });
+      const credential = EmailAuthProvider.credential(
+        currentUser.email,
+        data.oldPassword
+      );
 
-//     }
-//   }
-//   console.log(data)
+      await reauthenticateWithCredential(currentUser, credential).then(
+        async () => {
+          // User re-authenticated.
+          await updateEmail(currentUser, data.newEmail);
+        }
+      );
+    }
+
+    // setIsProfile(true)
+
+  };
+  // console.log(data)
   return (
     <>
       <FormControl id="userName">
         <FormLabel>User Profile</FormLabel>
         <Stack direction={["column", "row"]} spacing={6}>
           <Center>
-            {currentUser.photoURL ? (
+            {currentUser.appName ? (
               <Avatar
                 size={"xl"}
                 name={currentUser.displayName}
-                src={currentUser.photoURL}
+                src={currentUser.appName}
               />
             ) : (
               <Avatar
                 size={"xl"}
                 name={currentUser.displayName}
-                src={img
-                    ?URL.createObjectURL(img)
-                    :"https://bit.ly/tioluwani-kolawole"}
+                src={
+                  img
+                    ? URL.createObjectURL(img)
+                    : "https://bit.ly/tioluwani-kolawole"
+                }
               />
             )}
           </Center>
           <Center w="full">
-            <Button as={'label'} htmlFor="file" w="full">Change Profile</Button>
-            <Input type={'file'} id='file' display={'none'} onChange={(e)=>setImg(e.target.files[0])}></Input>
+            <Button as={"label"} htmlFor="file" w="full">
+              Change Profile
+            </Button>
+            <Input
+              type={"file"}
+              id="file"
+              display={"none"}
+              onChange={(e) => setImg(e.target.files[0])}
+            ></Input>
           </Center>
-         
         </Stack>
       </FormControl>
       <FormControl mt={"20px"} id="userName">
@@ -123,7 +167,7 @@ export default function EditProfile({ setIsProfile }) {
           _hover={{
             bg: "blue.500",
           }}
-        //   onClick={handleUpdate}
+          onClick={handleUpdate}
         >
           Submit
         </Button>
