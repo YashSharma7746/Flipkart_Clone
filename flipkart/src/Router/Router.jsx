@@ -9,11 +9,13 @@ import { MobilesTablets } from "../pages/Products/MobilesTablets/MobilesTablets.
 import { Poco } from "../pages/Products/MobilesTablets/Poco";
 import { Top } from "../pages/Products/TopOffers/Top";
 import { TvsAppliances } from "../pages/Products/TvsAppliances/TvsAppliances";
+import Home from "../pages/Home/Home";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 const AllRoutes = () => {
   return (
     <Routes>
+      <Route path="/" element={<Home/>}></Route>
       <Route path="/beauty" element={<Beauty />} />
       <Route path="/electronics" element={<Electronics />} />
       <Route path="/fashion" element={<Fashion />} />
