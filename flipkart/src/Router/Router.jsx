@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { Notfound } from "../pages/NotFound/Notfound";
 import { Beauty } from "../pages/Products/Beauty/Beauty";
 import { Electronics } from "../pages/Products/Electronics/Electronics";
 import { Fashion } from "../pages/Products/Fashion/Fashion";
@@ -24,6 +25,7 @@ const AllRoutes = () => {
       <Route path="/tvAppliances" element={<TvsAppliances />} />
       <Route path="/top" element={<Top/>} />
       <Route path="/poco" element={<Poco/>}/>
+      <Route path="*" element={<Notfound />} />
     </Routes>
   );
 };

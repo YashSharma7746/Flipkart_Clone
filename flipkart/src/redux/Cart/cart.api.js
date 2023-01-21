@@ -27,7 +27,7 @@ export const AddToCartApi = async (el) => {
   try {
     let response = await axios.post(
       `https://thankful-loafers-hare.cyclic.app/cart`,
-      { ...el }
+      { ...el,quantity:1 }
     );
     return response.data;
   } catch (er) {
