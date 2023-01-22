@@ -4,12 +4,14 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { v3 } from "uuid";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const CarouselDemo = ({ data, heading }) => {
+  console.log(v3.DNS);
   return (
     <Box
       backgroundColor={"white"}
@@ -67,7 +69,7 @@ const CarouselDemo = ({ data, heading }) => {
         <Grid templateColumns={"repeat(5,1fr)"} m="auto">
           {data.map((el, i) => {
             return (
-              <Box key={i}>
+              <Box key={v3.DNS}>
                 <SwiperSlide>
                   <Link to={el.link}>
                     <Box textAlign="center" cursor="pointer">
@@ -79,6 +81,7 @@ const CarouselDemo = ({ data, heading }) => {
                       >
                         <Image
                           src={el.img}
+                          objectFit="cover"
                           w={{ base: "50px", "2xl": "auto" }}
                         />
                       </Box>

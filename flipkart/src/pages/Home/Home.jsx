@@ -5,6 +5,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import data from "./data.json";
 import CarouselDemo from "./Carousel";
 import Carousel2 from "./Carousel2";
+import Links from "./links";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -62,7 +64,7 @@ const Home = () => {
               <Image src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/11946434f052f86f.jpg?q=50" />
             </Box>
           </Carousel>
-          <Box w="100%" m="auto" mt="-30px">
+          <Box w="100%" m="auto">
             <Image
               cursor={"pointer"}
               src="https://rukminim1.flixcart.com/fk-p-flap/2000/2000/image/86411e6addfb2db6.jpg?q=50"
@@ -139,7 +141,7 @@ const Home = () => {
           })}
         </Box>
         <Box w="99%" m="auto">
-          <Carousel2 data={data.featured_brands1}/>
+          <Carousel2 data={data.featured_brands1} />
         </Box>
         <Box
           w="99%"
@@ -238,7 +240,7 @@ const Home = () => {
           })}
         </Box>
         <Box w="99%" m="auto" mt="15px" mb="15px">
-          <Carousel2 data={data.featured_brands2}/>
+          <Carousel2 data={data.featured_brands2} />
         </Box>
         <Box
           display={"grid"}
@@ -395,6 +397,12 @@ const Home = () => {
               />
             );
           })}
+        </Box>
+        <Box mt="50px" textAlign={"left"}>
+          <Links />
+        </Box>
+        <Box>
+          <Footer />
         </Box>
       </Box>
     </Box>
