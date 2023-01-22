@@ -2,6 +2,8 @@ import {
   FashionWomens_Loading,
   FashionWomens_Error,
   GET_WOMENS_FASHION,
+  GET_WOMens_By_Min_Max_Price,
+  GET_WOMens_By_Min_Price,
 } from "./fashionWomens.action.Types";
 
 const iniitialState = {
@@ -34,9 +36,30 @@ export const ActionWomensFashionReducer = (state = iniitialState, { type, payloa
         womens: payload,
       };
     }
-
-    default: {
-      return state;
+    case GET_WOMens_By_Min_Price:{
+      let data = state.mens.filter((el)=>
+       el.price>=payload
+      )
+    
+      return{
+        ...state,mobiles:data
+      }
     }
+    
+    case GET_WOMens_By_Min_Max_Price:{
+      console.log(payload)
+      let data = state.mobiles.filter((el)=>
+      {
+        if(el.price>=payload.min && el.price <=payload.max){
+          return el;
+        }
+      }
+     )
+
+   
   }
+  default: {
+    return state;
+  }
+}
 };

@@ -21,11 +21,12 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ProductsDemo from "../../../components/Demo/ProductsDemo";
-import { GetWomensFashion } from "../../../redux/fashionWomens/actionFashionWomens.actions";
+import { getWoMensByMinMaxPrice, getWoMensByPrice, GetWomensFashion } from "../../../redux/fashionWomens/actionFashionWomens.actions";
 
 const WomensFashion = () => {
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(100);
+  const[minPrice,setMinPrice]=useState(0);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const dispatch = useDispatch();
   const store = useSelector((store) => store.WomensFashion);
@@ -124,26 +125,27 @@ const WomensFashion = () => {
                       placeholder="Min"
                       onChange={(e) => {
                         switch (e.target.value) {
-                          case "7000": {
+                          case "200": {
                             setMin(5);
                             // window.reload()
-                            dispatch(e.target.value);
+                            setMinPrice(200)
+                            dispatch(getWoMensByPrice(200));
                             break;
                           }
-                          case "8000": {
+                          case "500": {
                             setMin(10);
-                            dispatch(e.target.value);
+                            setMinPrice(500)
+                            dispatch(getWoMensByPrice(500));
                             break;
                           }
-                          case "9000": {
+                          case "700": {
                             setMin(20);
-                            dispatch(e.target.value);
+                            dispatch(getWoMensByPrice(700));
                             break;
                           }
-                          case "10000": {
+                          case "1000": {
                             setMin(30);
-                            dispatch(e.target.value);
-                            break;
+                            dispatch(getWoMensByPrice(1000))
                           }
                           default: {
                             setMin(0);
@@ -151,34 +153,34 @@ const WomensFashion = () => {
                         }
                       }}
                     >
-                      <option value="7000">₹7000</option>
-                      <option value="8000">₹8000</option>
-                      <option value="9000">₹9000</option>
-                      <option value="10000">₹10000</option>
+                      <option value="200">₹200</option>
+                      <option value="500">₹500</option>
+                      <option value="700">₹700</option>
+                      <option value="1000">₹1000</option>
                     </Select>
                     <Select
                       placeholder="Max"
                       onChange={(e) => {
                         switch (e.target.value) {
-                          case "10000": {
+                          case "700": {
                             setMax(30);
                             // window.reload()
-                            dispatch(e.target.value);
+                            dispatch(getWoMensByMinMaxPrice({min:minPrice,max:700}));
                             break;
                           }
-                          case "20000": {
+                          case "900": {
                             setMin(40);
-                            dispatch(e.target.value);
+                            dispatch(getWoMensByMinMaxPrice({min:minPrice,max:900}));
                             break;
                           }
-                          case "30000": {
+                          case "1000": {
                             setMin(50);
-                            dispatch(e.target.value);
+                            dispatch(getWoMensByMinMaxPrice({min:minPrice,max:1000}));
                             break;
                           }
-                          case "40000": {
+                          case "2000": {
                             setMin(100);
-                            dispatch(e.target.value);
+                            dispatch(getWoMensByMinMaxPrice({min:minPrice,max:2000}));
                             break;
                           }
                           default: {
@@ -187,10 +189,10 @@ const WomensFashion = () => {
                         }
                       }}
                     >
-                      <option value="10000">₹10000</option>
-                      <option value="20000">₹20000</option>
-                      <option value="30000">₹30000</option>
-                      <option value="40000">₹40000+</option>
+                     <option value="700">₹700</option>
+                      <option value="900">₹900</option>
+                      <option value="1000">₹1000</option>
+                      <option value="2000">₹2000</option>
                     </Select>
                   </Box>
                   <Box>
