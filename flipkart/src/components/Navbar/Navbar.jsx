@@ -54,8 +54,12 @@ import Login from "../Login/Login";
 import Reg from "../Registration/Reg";
 import Profile from "../MyProfile/Profile";
 import { AuthContext } from "../../context/AuthContext";
+
 import { useSelector } from "react-redux";
 import { store } from "../../redux/store";
+
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   //cart icon
@@ -372,6 +376,7 @@ const Navbar = () => {
       </Box>
 
       {/* cart items */}
+
       <Box
         display={["none", "none", "flex"]}
         cursor="pointer"
@@ -504,6 +509,21 @@ const Navbar = () => {
           </MenuList>
         </Menu>
       </Box>
+
+
+      <Link to="/cart">
+        <Box
+          display={"flex"}
+          cursor="pointer"
+          alignItems="center"
+          gap={"3px"}
+          fontWeight="bold"
+          color="white"
+        >
+          <FaShoppingCart />
+          <Text>Cart</Text>
+        </Box>
+      </Link>
 
       {/* login modal */}
       <Modal size="3xl" isOpen={modalIsOpen} onClose={closeModal}>

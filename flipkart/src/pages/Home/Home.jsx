@@ -5,6 +5,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import data from "./data.json";
 import CarouselDemo from "./Carousel";
 import Carousel2 from "./Carousel2";
+import Links from "./links";
+import Footer from "../../components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -32,10 +35,12 @@ const Home = () => {
                   _hover={{ color: "blue" }}
                   cursor="pointer"
                 >
-                  <Image ml="auto" mr="auto" src={ele.img} w="55px" />
-                  <Text fontSize={"13px"} mt="0px" fontWeight="500">
-                    {ele.title}
-                  </Text>
+                  <Link to={ele.link}>
+                    <Image ml="auto" mr="auto" src={ele.img} w="55px" />
+                    <Text fontSize={"13px"} mt="0px" fontWeight="500">
+                      {ele.title}
+                    </Text>
+                  </Link>
                 </Box>
               );
             })}
@@ -61,8 +66,11 @@ const Home = () => {
             <Box>
               <Image src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/11946434f052f86f.jpg?q=50" />
             </Box>
+            <Box>
+              <Image src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/3d76621ce209aa28.jpg?q=50" />
+            </Box>
           </Carousel>
-          <Box w="100%" m="auto" mt="-30px">
+          <Box w="100%" m="auto">
             <Image
               cursor={"pointer"}
               src="https://rukminim1.flixcart.com/fk-p-flap/2000/2000/image/86411e6addfb2db6.jpg?q=50"
@@ -139,7 +147,7 @@ const Home = () => {
           })}
         </Box>
         <Box w="99%" m="auto">
-          <Carousel2 data={data.featured_brands1}/>
+          <Carousel2 data={data.featured_brands1} />
         </Box>
         <Box
           w="99%"
@@ -238,7 +246,7 @@ const Home = () => {
           })}
         </Box>
         <Box w="99%" m="auto" mt="15px" mb="15px">
-          <Carousel2 data={data.featured_brands2}/>
+          <Carousel2 data={data.featured_brands2} />
         </Box>
         <Box
           display={"grid"}
@@ -395,6 +403,9 @@ const Home = () => {
               />
             );
           })}
+        </Box>
+        <Box mt="50px" textAlign={"left"}>
+          <Links />
         </Box>
       </Box>
     </Box>
