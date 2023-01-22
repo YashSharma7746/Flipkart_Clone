@@ -4,11 +4,11 @@ import {
   GET_Poco,
   GET_Poco_By_Rating,
   GET_Poco_By_Price,
-  
+  GET_Poco_By_Min_Max_Price
 } from "./Poco.action.Types";
 
 const iniitialState = {
-  loading: true,
+  loading: false,
   error: false,
   mobiles: [],
 };
@@ -39,7 +39,7 @@ export const PocoReducer = (state = iniitialState, { type, payload }) => {
     }
 case GET_Poco_By_Rating:{
 let data = state.mobiles.filter((el)=>(
-  el.ratings===payload
+  el.ratings>=payload
 ))
 
 return{
@@ -48,16 +48,30 @@ return{
 }
 
 case GET_Poco_By_Price:{
-  // let data = state.mobiles.filter((el)=>(
-  //  el.price>=payload
-  // ))
-  // console.log(data)
+  let data = state.mobiles.filter((el)=>
+   el.price>=payload
+  )
+
   return{
-    ...state,mobiles:state.mobiles.filter((el)=>(el.price>=payload))
+    ...state,mobiles:data
   }
 }
 
+case GET_Poco_By_Min_Max_Price:{
+  console.log(payload)
+  let data = state.mobiles.filter((el)=>
+  {
+    if(el.price>=payload.min && el.price <=payload.max){
+      return el;
+    }
+  }
+ )
 
+ return{
+   ...state,mobiles:data
+ }
+  
+}
 
 
     default: {
