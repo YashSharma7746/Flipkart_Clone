@@ -1,12 +1,9 @@
 import {
-    Drawer,
     DrawerBody,
     DrawerFooter,
     DrawerHeader,
-    DrawerOverlay,
     DrawerContent,
     DrawerCloseButton,
-    Button,
     Box,
     Image,
 
@@ -17,7 +14,7 @@ import EditProfile from './EditProfile';
 
 
 
-function Profile({closeDrawer}) {
+function Profile({closeDrawer,openModal}) {
     const [isProfile,setIsProfile]=useState(true)
   
     return (
@@ -27,7 +24,7 @@ function Profile({closeDrawer}) {
             <DrawerHeader>{isProfile?"My Profile":"Profile Edit"}</DrawerHeader>
   
             <DrawerBody>
-                {isProfile?<CurrentProfile setIsProfile={setIsProfile}/>:<EditProfile setIsProfile={setIsProfile}/>} 
+                {isProfile?<CurrentProfile setIsProfile={setIsProfile}/>:<EditProfile closeDrawer={closeDrawer} openModal={openModal} setIsProfile={setIsProfile}/>} 
             </DrawerBody>
   
             <DrawerFooter display={'flex'} justifyContent='center'>

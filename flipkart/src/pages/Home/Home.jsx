@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <Box>
       <Box p="12px" w="100%">
-        <Box w="100%" boxShadow="0px 11px 8px -15px #111">
+        <Box mt={'60px'} w="100%" boxShadow="0px 11px 8px -15px #111">
           <Box
             display={"grid"}
             gridTemplateColumns={{
