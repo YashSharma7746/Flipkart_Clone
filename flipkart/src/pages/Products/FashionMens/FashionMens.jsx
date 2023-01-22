@@ -58,7 +58,7 @@ const MensFashion = () => {
   }
   return (
     <>
-      <Heading mt={'60px'} mb="20px" fontSize={"20px"} pt="5px" pb="10px">
+      <Heading  mb="20px" fontSize={"20px"} pt="5px" pb="10px">
         Showing Results for Mens Fashion
       </Heading>
       <Box display={"flex"}>
@@ -67,6 +67,7 @@ const MensFashion = () => {
           display={{ base: "grid", "2xl": "flex" }}
           gap="20px"
           justifyContent="center"
+          mt={'60px'}
         >
           <Button
             colorScheme="blue"

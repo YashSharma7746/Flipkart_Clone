@@ -54,9 +54,10 @@ export const Poco = () => {
       fontFamily="Roboto, Arial, sans-serif"
       display="flex"
       justifyContent={"space-between"}
+      pt='60px'
     >
       {/* Left Box */}
-      <Box w="20%" display={"flex"} justifyContent="center">
+      <Box mt='60px' w="20%" display={"flex"} justifyContent="center">
         <Button colorScheme="blue" onClick={onOpen} position="fixed">
           Filter
         </Button>
@@ -225,7 +226,6 @@ export const Poco = () => {
         display="grid"
         gridTemplateColumns={"repeat(1,1fr)"}
         alignItems={"center"}
-        position="absolute"
         right="0px"
         gap="10px"
       >

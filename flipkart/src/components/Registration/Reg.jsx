@@ -26,7 +26,7 @@ import { useState, useEffect } from "react";
 
 import { BsFillExclamationTriangleFill } from "react-icons/bs";
 import { ImCross } from "react-icons/im";
-import { FaCheck } from "react-icons/fa";
+import { FaBullseye, FaCheck } from "react-icons/fa";
 import { auth } from "../../firebase";
 import { createUserWithEmailAndPassword, updateProfile } from "@firebase/auth";
 
@@ -99,10 +99,11 @@ const Reg = ({ page, setPage }) => {
         onCloseComplete: () => setPage(false),
       });
     } catch (error) {
+      setLoad(false)
       toast({
         position: "top",
         title: "Something Went Wrong",
-        description: `${error.message}`,
+        description: `${error.code}`,
         status: "error",
         duration: 9000,
         isClosable: true,

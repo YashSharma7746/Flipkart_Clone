@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Image } from "@chakra-ui/react";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import "./Products.Carousel.css";
+import { Link } from "react-router-dom";
 
 
 function ProductsCarousel({ data }) {
@@ -58,7 +59,8 @@ function ProductsCarousel({ data }) {
     >
       <Slider {...settings}>
         {data.map((item, i) => (
-          <div className="card" key={item.subtext}>
+          <Link to={`/${item.link}`}>
+            <div className="card" key={item.subtext}>
             <div className="card-top">
               <div
                 style={{
@@ -92,6 +94,7 @@ function ProductsCarousel({ data }) {
               <p style={{ color: "grey", fontSize: "14px" }}>{item.subtext}</p>
             </div>
           </div>
+          </Link>
         ))}
       </Slider>
     </div>

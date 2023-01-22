@@ -6,7 +6,6 @@ import data from "./data.json";
 import CarouselDemo from "./Carousel";
 import Carousel2 from "./Carousel2";
 import Links from "./links";
-import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 
 const Home = () => {

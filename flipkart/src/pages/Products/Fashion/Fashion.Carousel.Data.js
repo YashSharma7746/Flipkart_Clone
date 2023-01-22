@@ -5,25 +5,29 @@ return([
     image:"https://rukminim1.flixcart.com/image/150/150/km9ht3k0/t-shirt/i/a/y/xs-12939464-roadster-original-imagf7fe57szycrj.jpeg?q=70",
     price:"Min 65% Off",
     name: "USPA, Puma, Jack & Jon...",
-    subtext:"T-Shirts,Jackets & more"
+    subtext:"T-Shirts,Jackets & more",
+    link:"mens_fashion"
 },
 {
     image:"https://rukminim1.flixcart.com/image/150/150/xif0q/dress/z/y/2/m-299tk166-selvia-original-imagbtfgfqdr7h6a-bb.jpeg?q=70",
     price:"Min 60% Off",
     name: "Dresses, Tops, Denies &...",
-    subtext:"Tokyo Talkies, And Killer"
+    subtext:"Tokyo Talkies, And Killer",
+    link:"womens_fashion"
 },
 {
     image:"https://rukminim1.flixcart.com/image/150/150/xif0q/dress/c/x/e/xs-fw22ab027drseq-and-original-imagj64fpcxqdp66.jpeg?q=70",
     price:"Upto 80% Off",
     name: "Dresses, Sweaters, Deni...",
-    subtext:"Make Your Own Style..."
+    subtext:"Make Your Own Style...",
+    link:"womens_fashion"
 },
 {
     image:"https://rukminim1.flixcart.com/image/150/150/jm9hfgw0/sunglass/q/8/h/3002-blk-blk-3002-sil-blk-m-gansta-original-imaf97myeerytqqh.jpeg?q=70",
     price:"Min 60% Off",
     name: "Royal Son,Piraso & more..",
-    subtext:"Sunglasses"
+    subtext:"Sunglasses",
+    link:""
 },
 
 {
@@ -31,14 +35,16 @@ return([
     image:"https://rukminim1.flixcart.com/image/150/150/xif0q/hand-messenger-bag/n/t/e/attractive-sling-bag-tc-225-slnbg-elstc-trn-lck-grn-sling-bag-original-imagkppwjfq8w3ay.jpeg?q=70",
     price:"Under ₹299",
     name: "Handbags, Slingbags...",
-    subtext:"Trendy Collection"
+    subtext:"Trendy Collection",
+    link:""
 },
 {
 
     image:"https://rukminim1.flixcart.com/image/150/150/xif0q/short/w/i/r/l-solid-men-dark-blue-shorts-adrenex-original-imaghvhr2zvbgp6t.jpeg?q=70",
     price:"55-80% Off",
     name: "Nike,ADIDAS,Rebook...",
-    subtext:"Shorts, Trackpants, Track..."
+    subtext:"Shorts, Trackpants, Track...",
+    link:""
 },
 
 {
@@ -46,14 +52,16 @@ return([
     image:"https://rukminim1.flixcart.com/image/150/150/xif0q/sari/x/k/x/free-2685s1116-samah-unstitched-original-imagkwahnpgf2wfy.jpeg?q=70",
     price:"From ₹299",
     name: "Dailywear Sarees",
-    subtext:"CRAZY PRICES!!"
+    subtext:"CRAZY PRICES!!",
+    link:""
 },
 {
 
     image:"https://rukminim1.flixcart.com/flap/150/150/image/4572835daccaf844.jpg?q=70",
     price:"Under ₹399",
     name: "Kids' Winter Wear",
-    subtext:"Steal Deals!"
+    subtext:"Steal Deals!",
+    link:""
 },
 
 
