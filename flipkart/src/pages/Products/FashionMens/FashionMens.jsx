@@ -58,7 +58,7 @@ const MensFashion = () => {
   }
   return (
     <>
-      <Heading mb="20px" fontSize={"20px"} pt="5px" pb="10px">
+      <Heading mt={'60px'} mb="20px" fontSize={"20px"} pt="5px" pb="10px">
         Showing Results for Mens Fashion
       </Heading>
       <Box display={"flex"}>

@@ -19,7 +19,7 @@ import { AuthContext } from "../../context/AuthContext";
 import { getCartItem, removeToCart } from "../../redux/Cart/cart.actions";
 
 const Cart = () => {
-  const { currentuser } = useContext(AuthContext);
+  const { currentUser } = useContext(AuthContext);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getCartItem());
@@ -27,8 +27,10 @@ const Cart = () => {
   const cart = useSelector((store) => store.CartManager.cart);
   console.log(cart);
   return (
-    <Box w="70%" m="auto" mt="50px" backgroundColor={"white"}>
-      <Tabs>
+    
+    <Box w="70%" m="auto"  backgroundColor={"white"}>
+      <Box h={'80px'}></Box>
+      <Tabs >
         <TabList display={"flex"} justifyContent="space-between" p="10px 50px">
           <Tab w="30%">Flipkart</Tab>
           <Tab w="30%">Grocery</Tab>
@@ -36,7 +38,7 @@ const Cart = () => {
 
         <TabPanels>
           <TabPanel>
-            {!currentuser ? (
+            {!currentUser ? (
               <Box>
                 <Box
                   display="block"
@@ -241,7 +243,7 @@ const Cart = () => {
             )}
           </TabPanel>
           <TabPanel>
-            {!currentuser ? (
+            {!currentUser ? (
               <Box>
                 <Box
                   display="block"

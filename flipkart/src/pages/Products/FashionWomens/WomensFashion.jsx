@@ -63,6 +63,7 @@ const WomensFashion = () => {
       </Heading>
       <Box display={"flex"}>
         <Box
+        mt={'60px'}
           w={{ base: "10%", "2xl": "20%" }}
           display={{ base: "grid", "2xl": "flex" }}
           gap="20px"

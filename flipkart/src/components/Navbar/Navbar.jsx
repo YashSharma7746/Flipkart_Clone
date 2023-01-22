@@ -4,13 +4,11 @@ import { TiPlusOutline } from "react-icons/ti";
 import { AiTwotoneIdcard } from "react-icons/ai";
 import {
   BsBoxArrowInDown,
-  BsBoxArrowInLeft,
   BsHeartFill,
 } from "react-icons/bs";
 import {
   MdAccountBalanceWallet,
   MdShowChart,
-  MdShoppingCart,
 } from "react-icons/md";
 import { ImFolderUpload } from "react-icons/im";
 import { RiArrowDownSLine } from "react-icons/ri";
@@ -46,7 +44,6 @@ import {
   IconButton,
   MenuList,
   MenuItem,
-  useColorMode,
 } from "@chakra-ui/react";
 import React, { useContext, useRef, useState } from "react";
 import vipmart_logo from "./vipmart.png";
@@ -56,7 +53,6 @@ import Profile from "../MyProfile/Profile";
 import { AuthContext } from "../../context/AuthContext";
 
 import { useSelector } from "react-redux";
-import { store } from "../../redux/store";
 
 import { Link } from "react-router-dom";
 
@@ -116,9 +112,11 @@ const Navbar = () => {
       zIndex={"9"}
     >
       {/* web site's logo */}
+      <Link to={'/'}>
       <Box display={"flex"} alignItems="center" h="40px">
         <Image src={vipmart_logo} h="100%"></Image>
       </Box>
+      </Link>
 
       {/* search input box */}
 
@@ -376,7 +374,7 @@ const Navbar = () => {
       </Box>
 
       {/* cart items */}
-
+      <Link to="/cart">
       <Box
         display={["none", "none", "flex"]}
         cursor="pointer"
@@ -404,6 +402,7 @@ const Navbar = () => {
         </Box>
         <Text>Cart</Text>
       </Box>
+      </Link>
       {/* menu */}
       <Box display={["flex", "flex", "none"]}>
         <Menu>
@@ -511,7 +510,7 @@ const Navbar = () => {
       </Box>
 
 
-      <Link to="/cart">
+      {/* <Link to="/cart">
         <Box
           display={"flex"}
           cursor="pointer"
@@ -523,7 +522,7 @@ const Navbar = () => {
           <FaShoppingCart />
           <Text>Cart</Text>
         </Box>
-      </Link>
+      </Link> */}
 
       {/* login modal */}
       <Modal size="3xl" isOpen={modalIsOpen} onClose={closeModal}>

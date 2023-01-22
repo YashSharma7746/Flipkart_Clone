@@ -11,7 +11,7 @@ export const Fashion = () => {
     <Box w="100%" p="10px" bg="#f1f3f6">
       <Text
         textAlign={"left"}
-        mt="5px"
+        mt="60px"
         fontFamily="Roboto, Arial, sans-serif"
         fontSize="18px"
         fontWeight="500"
