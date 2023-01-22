@@ -2,7 +2,7 @@ import { useReducer,createContext, useEffect } from "react";
 import AuthReducers from "./AuthReducer";
 
 const INITIAL_STATE = {
-  currentUser: localStorage.getItem("user") && JSON.parse(localStorage.getItem("user")) ,
+  currentUser:  JSON.parse(localStorage.getItem("user")) ||null,
   isLoading: false,
   error: false,
 };

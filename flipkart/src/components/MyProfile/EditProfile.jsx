@@ -6,79 +6,105 @@ import {
   Stack,
   Avatar,
   Center,
+  useToast,
 } from "@chakra-ui/react";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { v4 as uuid } from "uuid";
 import { storage } from "../../firebase";
-import { EmailAuthProvider, reauthenticateWithCredential, updateEmail, updateProfile } from "firebase/auth";
+import {
+  EmailAuthProvider,
+  getAuth,
+  reauthenticateWithCredential,
+  updateEmail,
+  updateProfile,
+} from "firebase/auth";
 
-export default function EditProfile({ setIsProfile }) {
+export default function EditProfile({ setIsProfile, openModal, closeDrawer }) {
+  const toast = useToast();
+
+  const [load, setLoad] = useState(false);
+
+  const auth = getAuth();
+  console.log(auth.currentUser);
+
+  const { dispatch } = useContext(AuthContext);
+
   const [data, setData] = useState({
     username: "",
     newEmail: "",
     oldPassword: "",
   });
   const [img, setImg] = useState(null);
-  const { currentUser } = useContext(AuthContext);
-
+  // const { currentUser } = useContext(AuthContext);
 
   const handleChange = (e) => {
     setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleUpdate = async (e) => {
-    e.preventDefault();
-
+  const handleUpdate = async () => {
+    setLoad(true);
     if (img) {
       const storageRef = ref(storage, "usersImages/" + uuid());
       const uploadTask = uploadBytesResumable(storageRef, img);
-      console.log(uploadTask)
-      console.log(storageRef,storage)
+
       uploadTask.on(
         (error) => {},
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
-            console.log(downloadURL)
-            await updateProfile(currentUser, {
+            await updateProfile(auth.currentUser, {
               photoURL: downloadURL,
               displayName: data.username,
             });
 
             const credential = EmailAuthProvider.credential(
-              currentUser.email,
+              auth.currentUser.email,
               data.oldPassword
             );
 
-            await reauthenticateWithCredential(currentUser, credential).then(
-              async () => {
-                // User re-authenticated.
-                await updateEmail(currentUser, data.newEmail);
-              }
-            );
+            await reauthenticateWithCredential(
+              auth.currentUser,
+              credential
+            ).then(async () => {
+              // User re-authenticated.
+              await updateEmail(auth.currentUser, data.newEmail);
+            });
           });
         }
       );
     } else {
-      await updateProfile(currentUser, {
+      await updateProfile(auth.currentUser, {
         displayName: data.username,
       });
       const credential = EmailAuthProvider.credential(
-        currentUser.email,
+        auth.currentUser.email,
         data.oldPassword
       );
 
-      await reauthenticateWithCredential(currentUser, credential).then(
+      await reauthenticateWithCredential(auth.currentUser, credential).then(
         async () => {
           // User re-authenticated.
-          await updateEmail(currentUser, data.newEmail);
+          await updateEmail(auth.currentUser, data.newEmail);
         }
       );
     }
-
-    // setIsProfile(true)
-
+    setLoad(false);
+    toast({
+      position: "top",
+      title: "Profile Update Successful",
+      description:
+        "Profile update successful! Please login again to see the changes.",
+      status: "success",
+      duration: 9000,
+      isClosable: true,
+      onCloseComplete: () => {
+        dispatch({ type: "LOGOUT" });
+        closeDrawer();
+        openModal();
+      },
+      // onCloseComplete:(()=>navigate('/'))
+    });
   };
   // console.log(data)
   return (
@@ -87,16 +113,16 @@ export default function EditProfile({ setIsProfile }) {
         <FormLabel>User Profile</FormLabel>
         <Stack direction={["column", "row"]} spacing={6}>
           <Center>
-            {currentUser.appName ? (
+            {auth.currentUser.photoURL ? (
               <Avatar
                 size={"xl"}
-                name={currentUser.displayName}
-                src={currentUser.appName}
+                name={auth.currentUser.displayName}
+                src={img ? URL.createObjectURL(img) : auth.currentUser.photoURL}
               />
             ) : (
               <Avatar
                 size={"xl"}
-                name={currentUser.displayName}
+                name={auth.currentUser.displayName}
                 src={
                   img
                     ? URL.createObjectURL(img)
@@ -122,7 +148,7 @@ export default function EditProfile({ setIsProfile }) {
         <FormLabel>User name</FormLabel>
         <Input
           name="username"
-          placeholder={currentUser.displayName}
+          placeholder={auth.currentUser.displayName}
           _placeholder={{ color: "gray.500" }}
           type="text"
           onChange={handleChange}
@@ -132,7 +158,7 @@ export default function EditProfile({ setIsProfile }) {
         <FormLabel>Email address</FormLabel>
         <Input
           name="newEmail"
-          placeholder={currentUser.email}
+          placeholder={auth.currentUser.email}
           _placeholder={{ color: "gray.500" }}
           type="email"
           onChange={handleChange}
@@ -168,6 +194,8 @@ export default function EditProfile({ setIsProfile }) {
             bg: "blue.500",
           }}
           onClick={handleUpdate}
+          isLoading={load}
+          loadingText="Submitting"
         >
           Submit
         </Button>

@@ -1,9 +1,17 @@
-import { SearchIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, SearchIcon } from "@chakra-ui/icons";
 import { FaUserCircle, FaShoppingCart } from "react-icons/fa";
 import { TiPlusOutline } from "react-icons/ti";
 import { AiTwotoneIdcard } from "react-icons/ai";
-import { BsHeartFill } from "react-icons/bs";
-import { MdAccountBalanceWallet, MdShowChart } from "react-icons/md";
+import {
+  BsBoxArrowInDown,
+  BsBoxArrowInLeft,
+  BsHeartFill,
+} from "react-icons/bs";
+import {
+  MdAccountBalanceWallet,
+  MdShowChart,
+  MdShoppingCart,
+} from "react-icons/md";
 import { ImFolderUpload } from "react-icons/im";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { GoBell } from "react-icons/go";
@@ -33,6 +41,12 @@ import {
   Wrap,
   WrapItem,
   Avatar,
+  Menu,
+  MenuButton,
+  IconButton,
+  MenuList,
+  MenuItem,
+  useColorMode,
 } from "@chakra-ui/react";
 import React, { useContext, useRef, useState } from "react";
 import vipmart_logo from "./vipmart.png";
@@ -40,14 +54,17 @@ import Login from "../Login/Login";
 import Reg from "../Registration/Reg";
 import Profile from "../MyProfile/Profile";
 import { AuthContext } from "../../context/AuthContext";
+import { useSelector } from "react-redux";
+import { store } from "../../redux/store";
 
 const Navbar = () => {
+  //cart icon
+  const cartItems = useSelector((store) => store.CartManager.cart);
+  console.log(cartItems);
+
   // current user data
   const { currentUser } = useContext(AuthContext);
   console.log(currentUser);
-
-  
-
 
   const [page, setPage] = useState(false);
 
@@ -73,13 +90,13 @@ const Navbar = () => {
   const btnRef = useRef();
 
   // dispatch
-  const {dispatch}=useContext(AuthContext);
+  const { dispatch } = useContext(AuthContext);
 
   // handle logout
-  const handleLogout=()=>{
-    dispatch({type:"LOGOUT"});
-    openModal()
-  }
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" });
+    openModal();
+  };
 
   return (
     <Box
@@ -91,8 +108,8 @@ const Navbar = () => {
       w="100%"
       h="70px"
       p={4}
-      position='fixed'
-      zIndex={'999'}
+      position="fixed"
+      zIndex={"9"}
     >
       {/* web site's logo */}
       <Box display={"flex"} alignItems="center" h="40px">
@@ -159,7 +176,7 @@ const Navbar = () => {
                   {currentUser.photoURL ? (
                     <Avatar
                       name={currentUser.displayName}
-                      src="https://randomuser.me/api/portraits/men/32.jpg"
+                      src={currentUser.photoURL}
                     />
                   ) : (
                     <Avatar
@@ -284,9 +301,9 @@ const Navbar = () => {
           </Portal>
         </Popover>
       </Box>
-      <Box color="white" cursor={"pointer"} fontWeight="bold">
+      {/* <Box color="white" cursor={"pointer"} fontWeight="bold">
         Become a Seller
-      </Box>
+      </Box> */}
 
       {/* more option */}
       <Box>
@@ -296,7 +313,7 @@ const Navbar = () => {
               color="white"
               fontWeight="bold"
               cursor="pointer"
-              display={"flex"}
+              display={["none", "none", "flex"]}
               alignItems="center"
             >
               More
@@ -356,15 +373,136 @@ const Navbar = () => {
 
       {/* cart items */}
       <Box
-        display={"flex"}
+        display={["none", "none", "flex"]}
         cursor="pointer"
-        alignItems="center"
+        alignItems={"center"}
         gap={"3px"}
         fontWeight="bold"
         color="white"
       >
+        <Box
+          mt={"-30px"}
+          w={"17px"}
+          h="17px"
+          borderRadius={"50%"}
+          bgColor={"red"}
+          color="white"
+          fontSize="sm"
+          display={cartItems.length>0?"grid":'none'}
+          gap="3px"
+        >
+          <Text fontSize={"10px"}>{cartItems.length}</Text>
+          <FaShoppingCart />
+        </Box>
+        <Box display={cartItems.length>0?'none':'grid'}>
         <FaShoppingCart />
+        </Box>
         <Text>Cart</Text>
+      </Box>
+      {/* menu */}
+      <Box display={["flex", "flex", "none"]}>
+        <Menu>
+          <MenuButton
+            as={IconButton}
+            aria-label="Options"
+            icon={<HamburgerIcon />}
+            variant="solid"
+          />
+          <MenuList>
+            <MenuItem display={"flex"} gap="7px">
+              <Box
+                mt={"-25px"}
+                w={"14px"}
+                h="14px"
+                borderRadius={"50%"}
+                bgColor={"red"}
+                fontSize="sm"
+                display={cartItems.length>0?"grid":'none'}
+                gap="1.4px"
+              >
+                <Text
+                  color={"white"}
+                  fontWeight="bold"
+                  fontSize={"8px"}
+                  display={'flex'}
+                  alignItems='center'
+                  justifyContent={'center'}
+                >
+                  {cartItems.length}
+                </Text>
+                <FaShoppingCart />
+              </Box>
+              <Box display={cartItems.length>0?'none':'grid'}><FaShoppingCart /></Box>
+              <Text>Cart</Text>
+            </MenuItem>
+            <MenuItem>
+              <Box>
+                <Popover trigger="hover">
+                  <PopoverTrigger>
+                    <Text
+                      // fontWeight="bold"
+                      cursor="pointer"
+                      display={"flex"}
+                      alignItems="center"
+                      gap={"5px"}
+                    >
+                      <BsBoxArrowInDown />
+                      More
+                    </Text>
+                  </PopoverTrigger>
+                  <Portal>
+                    <PopoverContent>
+                      <PopoverArrow />
+                      <PopoverBody
+                        _hover={{ bgColor: "#E1F5FE" }}
+                        cursor="pointer"
+                        display="flex"
+                        alignItems="center"
+                        gap="10px"
+                      >
+                        <GoBell color="#4e8cf3" />
+                        <Text>Notification Preferences</Text>
+                      </PopoverBody>
+                      <Divider />
+                      <PopoverBody
+                        _hover={{ bgColor: "#E1F5FE" }}
+                        cursor="pointer"
+                        display="flex"
+                        alignItems="center"
+                        gap="10px"
+                      >
+                        <RiQuestionnaireFill color="#4e8cf3" />
+                        <Text>24x7 Customer Care</Text>
+                      </PopoverBody>
+                      <Divider />
+                      <PopoverBody
+                        _hover={{ bgColor: "#E1F5FE" }}
+                        cursor="pointer"
+                        display="flex"
+                        alignItems="center"
+                        gap="10px"
+                      >
+                        <MdShowChart color="#4e8cf3" />
+                        <Text>Advertise</Text>
+                      </PopoverBody>
+                      <Divider />
+                      <PopoverBody
+                        _hover={{ bgColor: "#E1F5FE" }}
+                        cursor="pointer"
+                        display="flex"
+                        alignItems="center"
+                        gap="10px"
+                      >
+                        <IoMdDownload color="#4e8cf3" />
+                        <Text>Download App</Text>
+                      </PopoverBody>
+                    </PopoverContent>
+                  </Portal>
+                </Popover>
+              </Box>
+            </MenuItem>
+          </MenuList>
+        </Menu>
       </Box>
 
       {/* login modal */}
@@ -384,7 +522,11 @@ const Navbar = () => {
         onClose={closeDrawer}
         finalFocusRef={btnRef}
       >
-        <Profile onClose={closeDrawer} />
+        <Profile
+          closeDrawer={closeDrawer}
+          openModal={openModal}
+          onClose={closeDrawer}
+        />
       </Drawer>
     </Box>
   );

@@ -16,3 +16,21 @@
     width: 60%;
     /* border: 2px solid red; */
 }
+@media only screen and (max-width:540px){
+    .container{
+        height: 680px;
+    }
+}
+@media only screen and (max-width:500px){
+    .container{
+        display: grid;
+        height: 1000px;
+    }
+    .left_col{
+        width: 100%;        
+    }
+    
+    .right_col{
+        width: 100%;
+    }
+}

@@ -17,7 +17,7 @@ import { AuthContext } from '../../context/AuthContext';
         {currentUser.photoURL ? (
                     <Avatar
                       name={currentUser.displayName}
-                      src="https://randomuser.me/api/portraits/men/32.jpg"
+                      src={currentUser.photoURL}
                     />
                   ) : (
                     <Avatar
