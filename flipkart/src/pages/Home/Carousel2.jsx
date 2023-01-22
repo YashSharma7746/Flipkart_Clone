@@ -41,7 +41,7 @@ const Carousel2 = ({ data }) => {
         <Grid templateColumns={"repeat(4,1fr)"} m="auto">
           {data.map((el, i) => {
             return (
-              <Box key={v3}>
+              <Box key={v3.DNS}>
                 <SwiperSlide>
                   <Image src={el} cursor="pointer" />
                 </SwiperSlide>

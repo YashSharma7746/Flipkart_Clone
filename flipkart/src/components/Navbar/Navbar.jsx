@@ -40,14 +40,12 @@ import Login from "../Login/Login";
 import Reg from "../Registration/Reg";
 import Profile from "../MyProfile/Profile";
 import { AuthContext } from "../../context/AuthContext";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // current user data
   const { currentUser } = useContext(AuthContext);
   console.log(currentUser);
-
-  
-
 
   const [page, setPage] = useState(false);
 
@@ -73,13 +71,13 @@ const Navbar = () => {
   const btnRef = useRef();
 
   // dispatch
-  const {dispatch}=useContext(AuthContext);
+  const { dispatch } = useContext(AuthContext);
 
   // handle logout
-  const handleLogout=()=>{
-    dispatch({type:"LOGOUT"});
-    openModal()
-  }
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" });
+    openModal();
+  };
 
   return (
     <Box
@@ -353,18 +351,19 @@ const Navbar = () => {
       </Box>
 
       {/* cart items */}
-      <Box
-        display={"flex"}
-        cursor="pointer"
-        alignItems="center"
-        gap={"3px"}
-        fontWeight="bold"
-        color="white"
-      >
-        <FaShoppingCart />
-        <Text>Cart</Text>
-      </Box>
-
+      <Link to="/cart">
+        <Box
+          display={"flex"}
+          cursor="pointer"
+          alignItems="center"
+          gap={"3px"}
+          fontWeight="bold"
+          color="white"
+        >
+          <FaShoppingCart />
+          <Text>Cart</Text>
+        </Box>
+      </Link>
       {/* login modal */}
       <Modal size="2xl" isOpen={modalIsOpen} onClose={closeModal}>
         {page ? (

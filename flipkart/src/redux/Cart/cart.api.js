@@ -4,7 +4,7 @@ import axios from "axios";
 export const GetCartDataApi = async () => {
   try {
     const response = await axios.get(
-      `https://rune-veil-mantis.glitch.me/carts`
+      `https://thankful-loafers-hare.cyclic.app/cart`
     );
     return response.data;
   } catch (er) {
@@ -15,7 +15,7 @@ export const GetCartDataApi = async () => {
 export const DelCartItemApi = async (id) => {
   try {
     let response = await axios.delete(
-      `https://rune-veil-mantis.glitch.me/carts/${id}`
+      `https://thankful-loafers-hare.cyclic.app/cart/${id}`
     );
     return response;
   } catch (er) {
@@ -26,7 +26,7 @@ export const DelCartItemApi = async (id) => {
 export const AddToCartApi = async (el) => {
   try {
     let response = await axios.post(
-      `https://rune-veil-mantis.glitch.me/carts`,
+      `https://thankful-loafers-hare.cyclic.app/cart`,
       { ...el }
     );
     return response.data;
