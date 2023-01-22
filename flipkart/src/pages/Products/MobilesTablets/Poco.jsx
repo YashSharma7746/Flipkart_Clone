@@ -48,13 +48,11 @@ export const Poco = () => {
       w="100%"
       p="10px"
       fontFamily="Roboto, Arial, sans-serif"
-      display="grid"
-      // justifyContent={"space-between"}
-      gridTemplateColumns={"repeat(2,1fr)"}
+      display="flex"
       justifyContent={"space-between"}
     >
       {/* Left Box */}
-      <Box w="20%" border="solid" display={"flex"} justifyContent="center">
+      <Box w="20%" display={"flex"} justifyContent="center">
         <Button colorScheme="blue" onClick={onOpen} position="fixed">
           Filter
         </Button>
@@ -188,25 +186,74 @@ export const Poco = () => {
         w="100%"
         display="grid"
         gridTemplateColumns={"repeat(1,1fr)"}
-        border="solid"
-        // left="15%"
         alignItems={"center"}
       >
         {Mobiles?.map((el, i) => (
-          <Box key={i} display="flex" justifyContent={"space-between"}>
-            <Box
-              w="30%"
-              display="flex"
-              justifyContent={"center"}
-              border="1px solid black"
-              p="20px"
-            >
+          <Box
+            key={i}
+            display="flex"
+            justifyContent={"space-between"}
+            mt="30px"
+            boxShadow={"md"}
+          >
+            <Box w="20%" display="flex" justifyContent={"center"} p="20px">
               <Image src={el.img} />
             </Box>
-            <Box w="70%" textAlign={"left"}>
-              <p>{el.title}</p>
-              <p>{el.ratings}</p>
-              <p>{el.price}</p>
+            <Box w="50%" mt="10px" textAlign={"left"}>
+              <p style={{ fontWeight: "700", marginBottom: "5px" }}>
+                {el.title}
+              </p>
+              <p
+                style={{
+                  display: "flex",
+                  backgroundColor: "#388E3C",
+                  color: "white",
+                  borderRadius: "3px",
+                  fontWeight: "500",
+                  fontSize: "12px",
+                  textAlign: "center",
+                  padding: "2px 4px 2px 6px",
+                  width: "40px",
+                  alignItems: "center",
+                  gap: "2px",
+                  justifyContent: "center",
+                  marginBottom: "10px",
+                }}
+              >
+                {el.ratings}{" "}
+                <Image
+                  h="10px"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg=="
+                />
+              </p>
+              <Box
+                p="10px"
+                pl="30px"
+                fontSize={"13px"}
+                lineHeight="2"
+                mb="10px"
+              >
+                <ul>
+                  <li>
+                    <Text>{el.desc.storage}</Text>
+                  </li>
+                  <li>
+                    <Text>{el.desc.display}</Text>
+                  </li>
+                  <li>
+                    <Text>{el.desc.camera}</Text>
+                  </li>
+                  <li>
+                    <Text>{el.desc.battery}</Text>
+                  </li>
+                  <li>
+                    <Text>{el.desc.processor}</Text>
+                  </li>
+                  <li>
+                    <Text>{el.desc.warranty}</Text>
+                  </li>
+                </ul>
+              </Box>
               <Button
                 onClick={() => {
                   dispatch(addToCart(el));
@@ -215,6 +262,21 @@ export const Poco = () => {
               >
                 Add to Cart
               </Button>
+            </Box>
+            <Box w="25%" textAlign={"left"}>
+              <Text fontSize={"30px"} fontWeight="500">
+                ₹{el.price}
+              </Text>
+              <Box display={"flex"} gap="15px" fontSize={"14px"}>
+                <Text
+                  textDecoration={"line-through"}
+                  textDecorationThickness="1px"
+                  color="grey"
+                >
+                  ₹{el.sells_price}
+                </Text>
+                <Text color="green">{el.discount}</Text>
+              </Box>
             </Box>
           </Box>
         ))}

@@ -2,7 +2,7 @@ import axios from "axios";
 export const GetPocoProductApi = async () => {
   try {
     const response = await axios.get(
-      `https://rune-veil-mantis.glitch.me/products`
+      `https://thankful-loafers-hare.cyclic.app/mobiles`
     );
     return response.data.mobiles;
   } catch (er) {

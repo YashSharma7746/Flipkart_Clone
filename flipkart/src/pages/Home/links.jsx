@@ -3,7 +3,7 @@ import React from "react";
 
 const Links = () => {
   return (
-    <Box>
+    <Box display={{ base: "none", xl: "inherit" }}>
       <Box fontSize={"12px"} p="15px">
         <Text mt="10px" cursor={"pointer"}>
           <span style={{ fontSize: "14px" }}>

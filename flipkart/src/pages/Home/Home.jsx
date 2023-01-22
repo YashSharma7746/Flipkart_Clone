@@ -7,6 +7,7 @@ import CarouselDemo from "./Carousel";
 import Carousel2 from "./Carousel2";
 import Links from "./links";
 import Footer from "../../components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -34,10 +35,12 @@ const Home = () => {
                   _hover={{ color: "blue" }}
                   cursor="pointer"
                 >
-                  <Image ml="auto" mr="auto" src={ele.img} w="55px" />
-                  <Text fontSize={"13px"} mt="0px" fontWeight="500">
-                    {ele.title}
-                  </Text>
+                  <Link to={ele.link}>
+                    <Image ml="auto" mr="auto" src={ele.img} w="55px" />
+                    <Text fontSize={"13px"} mt="0px" fontWeight="500">
+                      {ele.title}
+                    </Text>
+                  </Link>
                 </Box>
               );
             })}
@@ -62,6 +65,9 @@ const Home = () => {
             </Box>
             <Box>
               <Image src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/11946434f052f86f.jpg?q=50" />
+            </Box>
+            <Box>
+              <Image src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/3d76621ce209aa28.jpg?q=50" />
             </Box>
           </Carousel>
           <Box w="100%" m="auto">
@@ -400,9 +406,6 @@ const Home = () => {
         </Box>
         <Box mt="50px" textAlign={"left"}>
           <Links />
-        </Box>
-        <Box>
-          <Footer />
         </Box>
       </Box>
     </Box>
