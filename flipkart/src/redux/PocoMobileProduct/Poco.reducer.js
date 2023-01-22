@@ -48,27 +48,30 @@ return{
 
 case GET_Poco_By_Price:{
   let data = state.mobiles.filter((el)=>
-  el.price>=payload
+   el.price>=payload
   )
-  // console.log(data)
+
   return{
-    ...state,mobiles: data
+    ...state,mobiles:data
   }
 }
 
-
-case GET_Poco_By_Min_Max_Price: {
-  console.log(payload);
-  let data = state.mobiles.filter((el)=>{
-    if(el.price>=payload.min && el.price<=payload.max){
+case GET_Poco_By_Min_Max_Price:{
+  console.log(payload)
+  let data = state.mobiles.filter((el)=>
+  {
+    if(el.price>=payload.min && el.price <=payload.max){
       return el;
     }
-  })
-  return {
-    ...state,
-    mobiles: data
   }
+ )
+
+ return{
+   ...state,mobiles:data
+ }
+  
 }
+
 
     default: {
       return state;

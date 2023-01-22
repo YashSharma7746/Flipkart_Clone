@@ -4,7 +4,7 @@ export const GetPocoProductApi = async () => {
     const response = await axios.get(
       `https://thankful-loafers-hare.cyclic.app/mobiles`
     );
-    return response.data.mobiles;
+    return response.data;
   } catch (er) {
     console.log(er);
   }

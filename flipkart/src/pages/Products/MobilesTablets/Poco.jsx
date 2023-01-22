@@ -17,6 +17,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import {
   GetPoco,
+  getPocoByMinMaxPrice,
   getPocoByPrice,
   GetPocoByRating,
 } from "../../../redux/PocoMobileProduct/Poco.actions";
@@ -26,12 +27,15 @@ import {
   RangeSliderFilledTrack,
   RangeSliderThumb,
 } from "@chakra-ui/react";
+import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
 import { Select } from "@chakra-ui/react";
 import { useState } from "react";
 import { addToCart } from "../../../redux/Cart/cart.actions";
 export const Poco = () => {
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(100);
+  const [maxPrice, setMaxPrice] = useState(0);
+  const [minPrice, setMinPrice] = useState(0);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -40,7 +44,7 @@ export const Poco = () => {
   }, []);
   const Mobiles = useSelector((store) => store.pocoManager.mobiles);
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  console.log(Mobiles);
   return (
     <Box
       bg="#f1f3f6"
@@ -106,25 +110,30 @@ export const Poco = () => {
                         case "7000": {
                           setMin(5);
                           // window.reload()
-                          dispatch(GetPocoByRating(e.target.value));
+                          setMinPrice(7000);
+                          dispatch(getPocoByPrice(7000));
                           break;
                         }
                         case "8000": {
                           setMin(10);
-                          dispatch(GetPocoByRating(e.target.value));
+                          setMinPrice(8000);
+                          dispatch(getPocoByPrice(8000));
                           break;
                         }
                         case "9000": {
                           setMin(20);
-                          dispatch(GetPocoByRating(e.target.value));
+                          setMinPrice(9000);
+                          dispatch(getPocoByPrice(9000));
                           break;
                         }
                         case "10000": {
                           setMin(30);
-                          dispatch(GetPocoByRating(e.target.value));
+                          setMinPrice(10000);
+                          dispatch(getPocoByPrice(10000));
                           break;
                         }
                         default: {
+                          setMinPrice(0);
                           setMin(0);
                         }
                       }
@@ -142,26 +151,39 @@ export const Poco = () => {
                         case "10000": {
                           setMax(30);
                           // window.reload()
-                          dispatch(GetPocoByRating(e.target.value));
+                          setMaxPrice(10000);
+                          dispatch(
+                            getPocoByMinMaxPrice({ min: minPrice, max: 10000 })
+                          );
                           break;
                         }
                         case "20000": {
-                          setMin(40);
-                          dispatch(GetPocoByRating(e.target.value));
+                          setMax(40);
+                          setMaxPrice(20000);
+                          dispatch(
+                            getPocoByMinMaxPrice({ min: minPrice, max: 20000 })
+                          );
                           break;
                         }
                         case "30000": {
-                          setMin(50);
-                          dispatch(GetPocoByRating(e.target.value));
+                          setMax(50);
+                          setMaxPrice(30000);
+                          dispatch(
+                            getPocoByMinMaxPrice({ min: minPrice, max: 30000 })
+                          );
                           break;
                         }
                         case "40000": {
-                          setMin(100);
-                          dispatch(GetPocoByRating(e.target.value));
+                          setMax(100);
+                          setMaxPrice(40000);
+                          dispatch(
+                            getPocoByMinMaxPrice({ min: minPrice, max: 40000 })
+                          );
                           break;
                         }
                         default: {
-                          setMin(0);
+                          setMaxPrice(0);
+                          setMax(0);
                         }
                       }
                     }}
@@ -174,6 +196,22 @@ export const Poco = () => {
                 </Box>
                 <Box>
                   <Text>Customer Rating</Text>
+                  <Checkbox
+                    colorScheme="blue"
+                    onChange={() => {
+                      dispatch(GetPocoByRating(4));
+                    }}
+                  >
+                    4&#9733; & above
+                  </Checkbox>
+                  <Checkbox
+                    colorScheme="blue"
+                    onChange={() => {
+                      dispatch(GetPocoByRating(3));
+                    }}
+                  >
+                    3&#9733; & above
+                  </Checkbox>
                 </Box>
               </Box>
             </DrawerBody>
@@ -183,10 +221,13 @@ export const Poco = () => {
 
       {/* Right Box */}
       <Box
-        w="100%"
+        w="80%"
         display="grid"
         gridTemplateColumns={"repeat(1,1fr)"}
         alignItems={"center"}
+        position="absolute"
+        right="0px"
+        gap="10px"
       >
         {Mobiles?.map((el, i) => (
           <Box
