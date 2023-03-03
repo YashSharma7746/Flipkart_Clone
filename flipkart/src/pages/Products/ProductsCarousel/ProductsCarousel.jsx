@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Image } from "@chakra-ui/react";
-import { AiOutlineDoubleRight } from "react-icons/ai";
 import "./Products.Carousel.css";
 import { Link } from "react-router-dom";
 

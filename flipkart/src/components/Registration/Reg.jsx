@@ -26,7 +26,7 @@ import { useState, useEffect } from "react";
 
 import { BsFillExclamationTriangleFill } from "react-icons/bs";
 import { ImCross } from "react-icons/im";
-import { FaBullseye, FaCheck } from "react-icons/fa";
+import { FaCheck } from "react-icons/fa";
 import { auth } from "../../firebase";
 import { createUserWithEmailAndPassword, updateProfile } from "@firebase/auth";
 
@@ -77,7 +77,7 @@ const Reg = ({ page, setPage }) => {
   }, [pwd, matchPwd]);
 
   const handleSubmit = async () => {
-    setLoad(true)
+    setLoad(true);
     try {
       await createUserWithEmailAndPassword(auth, email, pwd).then(
         (userCredential) => {
@@ -88,7 +88,7 @@ const Reg = ({ page, setPage }) => {
           });
         }
       );
-      setLoad(false)
+      setLoad(false);
       toast({
         position: "top",
         title: "Login Successful.",
@@ -99,7 +99,7 @@ const Reg = ({ page, setPage }) => {
         onCloseComplete: () => setPage(false),
       });
     } catch (error) {
-      setLoad(false)
+      setLoad(false);
       toast({
         position: "top",
         title: "Something Went Wrong",
@@ -311,9 +311,14 @@ const Reg = ({ page, setPage }) => {
                   gap={1}
                   justifyContent="center"
                 >
-                  <Text color={'black'}>Existing User?</Text>
+                  <Text color={"black"}>Existing User?</Text>
                   <RouteLink to={"#"}>
-                    <Text _hover={{textDecoration:"underline"}} onClick={() => setPage(false)}>Log in</Text>
+                    <Text
+                      _hover={{ textDecoration: "underline" }}
+                      onClick={() => setPage(false)}
+                    >
+                      Log in
+                    </Text>
                   </RouteLink>
                 </Box>
               </Stack>

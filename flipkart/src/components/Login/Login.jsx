@@ -57,7 +57,6 @@ const Login = ({ page, setPage, onClose }) => {
             duration: 9000,
             isClosable: true,
             onCloseComplete: () => onClose(),
-            // onCloseComplete:(()=>navigate('/'))
           });
 
           // console.log(user)

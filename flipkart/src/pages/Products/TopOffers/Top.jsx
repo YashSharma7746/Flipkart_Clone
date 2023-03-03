@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Box, Image,Button } from "@chakra-ui/react";
+import { Text, Box,Button } from "@chakra-ui/react";
 import ProductsCarousel from '../ProductsCarousel/ProductsCarousel';
 import { TopCarousalData1, TopCarousalData2, TopCarousalData3, TopCarousalData4 } from './Top.Carousel.data';
 export const Top = () => {

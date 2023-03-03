@@ -3,9 +3,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <Box backgroundColor={"#172337"} w="100%" display={{base:"none",xl:"inherit","2xl":"inherit"}}>
+    <Box mt={'100px'} backgroundColor={"#172337"} w="100%" display={{base:"grid",xl:"inherit","2xl":"inherit"}}>
       <Box w="90%" m="auto" pt="40px" ml="65px">
-        <Box display={"flex"}>
+        <Box display={{base:"grid",md:"flex",xl:"flex","2xl":"flex"}}>
           <Box textAlign={"left"} flex="1">
             <Box color="#878787" fontSize={"12px"} fontWeight="400" mb="9px">
               ABOUT
@@ -117,9 +117,9 @@ const Footer = () => {
               </Text>
             </Box>
           </Box>
-          <Box textAlign={"left"} flex="1">
-            <Box borderLeft={"1px solid #454d5e"} p="0 25px">
-              <Box color="#878787" fontSize={"12px"} fontWeight="400" mb="9px">
+          <Box textAlign={"left"} mr='10px' flex="1">
+            <Box borderLeft={"1px solid #454d5e"} >
+              <Box color="#878787" fontSize={"12px"}  fontWeight="400" mb="9px">
                 Mail Us:
               </Box>
               <Box
@@ -127,6 +127,7 @@ const Footer = () => {
                 color="white"
                 fontSize={"12px"}
                 lineHeight="1.5"
+                
               >
                 <Text>Flipkart Interet Private Limited,</Text>
                 <Text>Buildings Alyssa, Begonia & </Text>
@@ -173,7 +174,7 @@ const Footer = () => {
       </Box>
       <Box w="100%">
         <Box
-          display={"flex"}
+          display={{base:"grid",xl:"flex","2xl":"flex"}}
           borderTop="1px solid #454d5e"
           p="25px 0"
           mt="40px"
@@ -208,7 +209,7 @@ const Footer = () => {
           <Box>
             <Text color="white">© 2007-2023 Flipkart.com</Text>
           </Box>
-          <Box>
+          <Box >
             <Image src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" />
           </Box>
         </Box>

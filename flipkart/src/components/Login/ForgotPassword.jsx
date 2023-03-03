@@ -27,7 +27,6 @@ const ForgotPassword = ({ page, setPage, onClose,setForgotPage }) => {
     sendPasswordResetEmail(auth, email)
       .then(() => {
         // Password reset email sent!
-        // ..
         toast({
             position:'top',
             title: 'Password Reset Successful',
