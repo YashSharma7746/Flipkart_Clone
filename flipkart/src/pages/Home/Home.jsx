@@ -6,7 +6,7 @@ import data from "./data.json";
 import CarouselDemo from "./Carousel";
 import Carousel2 from "./Carousel2";
 import Links from "./links";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -34,7 +34,7 @@ const Home = () => {
                   _hover={{ color: "blue" }}
                   cursor="pointer"
                 >
-                  <Link to={ele.link}>
+                  <Link to={ele.link?ele.link:"/notfound"}>
                     <Image ml="auto" mr="auto" src={ele.img} w="55px" />
                     <Text fontSize={"13px"} mt="0px" fontWeight="500">
                       {ele.title}
