@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Divider,
   Heading,
   Image,
   Tab,
@@ -9,6 +10,7 @@ import {
   TabPanels,
   Tabs,
   Text,
+  Wrap,
 } from "@chakra-ui/react";
 import React from "react";
 import { useEffect } from "react";
@@ -106,16 +108,19 @@ const Cart = () => {
               <Box>
                 {cart.map((el) => {
                   return (
+                    <>
                     <Box
-                      display={{ base: "grid", "2xl": "flex" }}
+                      // display={{ base: "block", "flex": "flex" }}
+                      display={{md:'flex'}}
                       p={{ base: "none", "2xl": "10px" }}
-                      boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
+                      // boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
                       borderRadius={"20px"}
                       mb="20px"
                       textAlign={{ base: "center", "2xl": "right" }}
                     >
                       <Box
                         w={{ base: "100%", sm: "70%", md: "75%", "2xl": "30%" }}
+                        m='auto'
                         display={"flex"}
                         flexDirection="column"
                         justifyContent={"center"}
@@ -127,7 +132,7 @@ const Cart = () => {
                           h={{ base: "100px", "2xl": "200px" }}
                           borderRadius={"15px"}
                           p="10px"
-                          boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
+                          // boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
                           src={el.img}
                           ml="auto"
                           mr="auto"
@@ -135,7 +140,8 @@ const Cart = () => {
                         <Box textAlign="center">
                           <Button
                             backgroundColor={"#ffdf00"}
-                            colorScheme="#ffdf00"
+                            // colorScheme="#ffdf00"
+                            colorScheme='yellow'
                             color="black"
                             fontSize="20px"
                             fontWeight={"bold"}
@@ -157,7 +163,8 @@ const Cart = () => {
                           <Button
                             size={{ base: "sm", "2xl": "md" }}
                             backgroundColor={"#ffdf00"}
-                            colorScheme="#ffdf00"
+                            // colorScheme="#ffdf00"
+                            colorScheme='yellow'
                             color="black"
                             fontSize="20px"
                             fontWeight={"bold"}
@@ -175,19 +182,22 @@ const Cart = () => {
                           </Heading>
                           <Text
                             fontWeight={"bold"}
-                            fontSize={{ base: "10px", "2xl": "18px" }}
+                            fontSize={{ base: "12px", "2xl": "18px" }}
                             mt="20px"
                             mb="20px"
+                            color={'orange.400'}
                           >
+                            Price :   
                             <span
                               style={{
                                 textDecoration: "line-through",
                                 fontSize: "10px",
                                 fontWeight: "lighter",
                                 marginRight: "20px",
+                                marginLeft:"20px"
                               }}
                             >
-                              {el.sells_price}
+                                {el.sells_price}
                             </span>
                             {el.price}
                             <span
@@ -202,15 +212,17 @@ const Cart = () => {
                           </Text>
                         </Box>
                         <Box
-                          display={{ "2xl": "flex" }}
-                          justifyContent={"right"}
+                          // display={{ "2xl": "flex" }}
+                          display={'flex'}
+                          justifyContent={{base:"center",'2xl':"right"}}
+                          alignItems='center'
                           mt="40px"
                           gap="15px"
                         >
                           <Button
                             size={{ base: "sm", "2xl": "lg" }}
                             backgroundColor={"#2874f0"}
-                            colorScheme="#2874f0"
+                            colorScheme="blue"
                             color="white"
                           >
                             SAVE FOR LATER
@@ -220,8 +232,8 @@ const Cart = () => {
                             onClick={() => dispatch(removeToCart(el.id))}
                             backgroundColor="#f82731"
                             color="white"
-                            mt={{ base: "10px", "2xl": "0px" }}
-                            colorScheme={"#f82731"}
+                            // mt={{ base: "10px", "2xl": "0px" }}
+                            colorScheme={"red"}
                           >
                             {" "}
                             <AiTwotoneRest />
@@ -230,12 +242,15 @@ const Cart = () => {
                         </Box>
                       </Box>
                     </Box>
+                     <Divider/>
+                   </>
                   );
                 })}
                 <Button
                   color="white"
                   backgroundColor={"#fb641b"}
-                  colorScheme="#fb641b"
+                  colorScheme="orange"
+                  mt={'20px'}
                 >
                   PLACE ORDER
                 </Button>

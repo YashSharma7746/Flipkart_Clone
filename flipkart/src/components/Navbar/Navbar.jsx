@@ -413,7 +413,7 @@ const Navbar = () => {
             variant="solid"
           />
           <MenuList>
-            <MenuItem display={"flex"} gap="7px">
+           <Link to={'/cart'}> <MenuItem display={"flex"} gap="7px">
               <Box
                 mt={"-25px"}
                 w={"14px"}
@@ -438,7 +438,7 @@ const Navbar = () => {
               </Box>
               <Box display={cartItems.length>0?'none':'grid'}><FaShoppingCart /></Box>
               <Text>Cart</Text>
-            </MenuItem>
+            </MenuItem></Link>
             <MenuItem>
               <Box>
                 <Popover trigger="hover">
