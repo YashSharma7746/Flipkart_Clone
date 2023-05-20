@@ -120,7 +120,7 @@ const Navbar = () => {
 
       {/* search input box */}
 
-      <Box w="30%">
+      <Box w="30%" display={["none","none", "flex"]}>
         <InputGroup>
           <Input
             value={text}
