@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <Box mt={'100px'} backgroundColor={"#172337"} w="100%" display={{base:"grid",xl:"inherit","2xl":"inherit"}}>
-      <Box w="90%" m="auto" pt="40px" ml="65px">
+      <Box w="80%" m="auto" pt="40px" ml="65px">
         <Box display={{base:"grid",md:"flex",xl:"flex","2xl":"flex"}}>
           <Box textAlign={"left"} flex="1">
             <Box color="#878787" fontSize={"12px"} fontWeight="400" mb="9px">
