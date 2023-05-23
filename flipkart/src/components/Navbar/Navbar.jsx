@@ -303,9 +303,7 @@ const Navbar = () => {
           </Portal>
         </Popover>
       </Box>
-      {/* <Box color="white" cursor={"pointer"} fontWeight="bold">
-        Become a Seller
-      </Box> */}
+
 
       {/* more option */}
       <Box>
